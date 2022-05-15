@@ -1,0 +1,4896 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local MoonUI = Instance.new("ScreenGui")
+local Open = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+local UICorner = Instance.new("UICorner")
+local MoonFrame = Instance.new("Frame")
+local TitleBar = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local UICorner_2 = Instance.new("UICorner")
+local BtnFrame = Instance.new("Frame")
+local Button = Instance.new("TextButton")
+local TextLabel_2 = Instance.new("TextLabel")
+local UICorner_3 = Instance.new("UICorner")
+local UICorner_4 = Instance.new("UICorner")
+local Button_2 = Instance.new("TextButton")
+local TextLabel_3 = Instance.new("TextLabel")
+local UICorner_5 = Instance.new("UICorner")
+local Button_3 = Instance.new("TextButton")
+local TextLabel_4 = Instance.new("TextLabel")
+local UICorner_6 = Instance.new("UICorner")
+local UICorner_7 = Instance.new("UICorner")
+local Button_4 = Instance.new("TextButton")
+local TextLabel_5 = Instance.new("TextLabel")
+local UICorner_8 = Instance.new("UICorner")
+local Button_5 = Instance.new("TextButton")
+local TextLabel_6 = Instance.new("TextLabel")
+local Button_6 = Instance.new("TextButton")
+local TextLabel_7 = Instance.new("TextLabel")
+local UICorner_9 = Instance.new("UICorner")
+local Button_7 = Instance.new("TextButton")
+local TextLabel_8 = Instance.new("TextLabel")
+local UICorner_10 = Instance.new("UICorner")
+local ScriptsUIFrame = Instance.new("Frame")
+local ScriptsUITitle = Instance.new("Frame")
+local Title_2 = Instance.new("TextLabel")
+local MoonIcon = Instance.new("ImageButton")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local Button_8 = Instance.new("TextButton")
+local TextLabel_9 = Instance.new("TextLabel")
+local UICorner_11 = Instance.new("UICorner")
+local Button_9 = Instance.new("TextButton")
+local TextLabel_10 = Instance.new("TextLabel")
+local UICorner_12 = Instance.new("UICorner")
+local Button_10 = Instance.new("TextButton")
+local TextLabel_11 = Instance.new("TextLabel")
+local UICorner_13 = Instance.new("UICorner")
+local Button_11 = Instance.new("TextButton")
+local TextLabel_12 = Instance.new("TextLabel")
+local UICorner_14 = Instance.new("UICorner")
+local Button_12 = Instance.new("TextButton")
+local TextLabel_13 = Instance.new("TextLabel")
+local UICorner_15 = Instance.new("UICorner")
+local Button_13 = Instance.new("TextButton")
+local TextLabel_14 = Instance.new("TextLabel")
+local UICorner_16 = Instance.new("UICorner")
+local Button_14 = Instance.new("TextButton")
+local TextLabel_15 = Instance.new("TextLabel")
+local UICorner_17 = Instance.new("UICorner")
+local Button_15 = Instance.new("TextButton")
+local TextLabel_16 = Instance.new("TextLabel")
+local UICorner_18 = Instance.new("UICorner")
+local Button_16 = Instance.new("TextButton")
+local TextLabel_17 = Instance.new("TextLabel")
+local UICorner_19 = Instance.new("UICorner")
+local Button_17 = Instance.new("TextButton")
+local TextLabel_18 = Instance.new("TextLabel")
+local TextLabel_19 = Instance.new("TextLabel")
+local UICorner_20 = Instance.new("UICorner")
+local Button_18 = Instance.new("TextButton")
+local TextLabel_20 = Instance.new("TextLabel")
+local UICorner_21 = Instance.new("UICorner")
+local Button_19 = Instance.new("TextButton")
+local TextLabel_21 = Instance.new("TextLabel")
+local UICorner_22 = Instance.new("UICorner")
+local Button_20 = Instance.new("TextButton")
+local TextLabel_22 = Instance.new("TextLabel")
+local UICorner_23 = Instance.new("UICorner")
+local Button_21 = Instance.new("TextButton")
+local TextLabel_23 = Instance.new("TextLabel")
+local UICorner_24 = Instance.new("UICorner")
+local Button_22 = Instance.new("TextButton")
+local TextLabel_24 = Instance.new("TextLabel")
+local UICorner_25 = Instance.new("UICorner")
+local Button_23 = Instance.new("TextButton")
+local TextLabel_25 = Instance.new("TextLabel")
+local UICorner_26 = Instance.new("UICorner")
+local Button_24 = Instance.new("TextButton")
+local TextLabel_26 = Instance.new("TextLabel")
+local UICorner_27 = Instance.new("UICorner")
+local Button_25 = Instance.new("TextButton")
+local TextLabel_27 = Instance.new("TextLabel")
+local UICorner_28 = Instance.new("UICorner")
+local Button_26 = Instance.new("TextButton")
+local TextLabel_28 = Instance.new("TextLabel")
+local TextLabel_29 = Instance.new("TextLabel")
+local UICorner_29 = Instance.new("UICorner")
+local Button_27 = Instance.new("TextButton")
+local TextLabel_30 = Instance.new("TextLabel")
+local TextLabel_31 = Instance.new("TextLabel")
+local UICorner_30 = Instance.new("UICorner")
+local Button_28 = Instance.new("TextButton")
+local TextLabel_32 = Instance.new("TextLabel")
+local TextLabel_33 = Instance.new("TextLabel")
+local UICorner_31 = Instance.new("UICorner")
+local Button_29 = Instance.new("TextButton")
+local TextLabel_34 = Instance.new("TextLabel")
+local TextLabel_35 = Instance.new("TextLabel")
+local UICorner_32 = Instance.new("UICorner")
+local Button_30 = Instance.new("TextButton")
+local TextLabel_36 = Instance.new("TextLabel")
+local UICorner_33 = Instance.new("UICorner")
+local UICorner_34 = Instance.new("UICorner")
+local UICorner_35 = Instance.new("UICorner")
+local FunUIFrame = Instance.new("Frame")
+local FunUITitle = Instance.new("Frame")
+local Title_3 = Instance.new("TextLabel")
+local UICorner_36 = Instance.new("UICorner")
+local UICorner_37 = Instance.new("UICorner")
+local TextButton = Instance.new("TextButton")
+local UICorner_38 = Instance.new("UICorner")
+local TextButton_2 = Instance.new("TextButton")
+local UICorner_39 = Instance.new("UICorner")
+local TextButton_3 = Instance.new("TextButton")
+local UICorner_40 = Instance.new("UICorner")
+local TextButton_4 = Instance.new("TextButton")
+local UICorner_41 = Instance.new("UICorner")
+local TextButton_5 = Instance.new("TextButton")
+local UICorner_42 = Instance.new("UICorner")
+local CreditsUIFrame = Instance.new("Frame")
+local CreditsUITitle = Instance.new("Frame")
+local Title_4 = Instance.new("TextLabel")
+local UICorner_43 = Instance.new("UICorner")
+local Title_5 = Instance.new("TextLabel")
+local Title_6 = Instance.new("TextLabel")
+local UICorner_44 = Instance.new("UICorner")
+local Title_7 = Instance.new("TextLabel")
+local UICorner_45 = Instance.new("UICorner")
+local Title_8 = Instance.new("TextLabel")
+local UICorner_46 = Instance.new("UICorner")
+local Title_9 = Instance.new("TextLabel")
+local UICorner_47 = Instance.new("UICorner")
+local Title_10 = Instance.new("TextLabel")
+local UICorner_48 = Instance.new("UICorner")
+local Title_11 = Instance.new("TextLabel")
+local UICorner_49 = Instance.new("UICorner")
+local Title_12 = Instance.new("TextLabel")
+local UICorner_50 = Instance.new("UICorner")
+local Title_13 = Instance.new("TextLabel")
+local UICorner_51 = Instance.new("UICorner")
+local Title_14 = Instance.new("TextLabel")
+local UICorner_52 = Instance.new("UICorner")
+local Title_15 = Instance.new("TextLabel")
+local UICorner_53 = Instance.new("UICorner")
+local Title_16 = Instance.new("TextLabel")
+local UICorner_54 = Instance.new("UICorner")
+local Title_17 = Instance.new("TextLabel")
+local Title_18 = Instance.new("TextLabel")
+local UICorner_55 = Instance.new("UICorner")
+local Title_19 = Instance.new("TextLabel")
+local Title_20 = Instance.new("TextLabel")
+local Title_21 = Instance.new("TextLabel")
+local UICorner_56 = Instance.new("UICorner")
+local Title_22 = Instance.new("TextLabel")
+local UICorner_57 = Instance.new("UICorner")
+local ExecutorUIFrame = Instance.new("Frame")
+local Button1 = Instance.new("TextButton")
+local TextLabel_37 = Instance.new("TextLabel")
+local UICorner_58 = Instance.new("UICorner")
+local ExecuteBox = Instance.new("TextBox")
+local UICorner_59 = Instance.new("UICorner")
+local ExecutorUITitle = Instance.new("Frame")
+local Title_23 = Instance.new("TextLabel")
+local Button1_2 = Instance.new("TextButton")
+local TextLabel_38 = Instance.new("TextLabel")
+local UICorner_60 = Instance.new("UICorner")
+local HomeUIFrame = Instance.new("Frame")
+local HomeUITitle = Instance.new("Frame")
+local Title_24 = Instance.new("TextLabel")
+local UICorner_61 = Instance.new("UICorner")
+local DescriptionPlayerText = Instance.new("TextLabel")
+local UICorner_62 = Instance.new("UICorner")
+local PlayerImage = Instance.new("ImageLabel")
+local UICorner_63 = Instance.new("UICorner")
+local SSUIFrame = Instance.new("Frame")
+local SSUITitle = Instance.new("Frame")
+local Title_25 = Instance.new("TextLabel")
+local Button1Main = Instance.new("TextButton")
+local TextLabel_39 = Instance.new("TextLabel")
+local ExecuteBox_2 = Instance.new("TextBox")
+local Button1_3 = Instance.new("TextButton")
+local TextLabel_40 = Instance.new("TextLabel")
+
+--Properties:
+
+MoonUI.Name = "MoonUI"
+MoonUI.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+MoonUI.ResetOnSpawn = false
+
+Open.Name = "Open"
+Open.Parent = MoonUI
+Open.AnchorPoint = Vector2.new(1, 0)
+Open.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+Open.BorderSizePixel = 0
+Open.Position = UDim2.new(0.99452889, 0, 0.0115207378, 0)
+Open.Size = UDim2.new(0.0522796363, 0, 0.186635941, 0)
+Open.ZIndex = 2
+Open.Font = Enum.Font.GothamSemibold
+Open.Text = ""
+Open.TextColor3 = Color3.fromRGB(255, 255, 255)
+Open.TextScaled = true
+Open.TextSize = 14.000
+Open.TextWrapped = true
+
+TextLabel.Parent = Open
+TextLabel.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextLabel.Size = UDim2.new(0.791666687, 0, 0.285714298, 0)
+TextLabel.ZIndex = 2
+TextLabel.Font = Enum.Font.GothamSemibold
+TextLabel.Text = "Close"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+UICorner.CornerRadius = UDim.new(0.5, 0)
+UICorner.Parent = Open
+
+MoonFrame.Name = "MoonFrame"
+MoonFrame.Parent = MoonUI
+MoonFrame.AnchorPoint = Vector2.new(1, 0)
+MoonFrame.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+MoonFrame.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MoonFrame.BorderSizePixel = 0
+MoonFrame.Position = UDim2.new(0, 531, 0, 359)
+MoonFrame.Size = UDim2.new(0, 492, 0, 236)
+
+TitleBar.Name = "TitleBar"
+TitleBar.Parent = MoonFrame
+TitleBar.AnchorPoint = Vector2.new(1, 0)
+TitleBar.BackgroundColor3 = Color3.fromRGB(81, 81, 81)
+TitleBar.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TitleBar.BorderSizePixel = 0
+TitleBar.Position = UDim2.new(0, 492, 0, -10)
+TitleBar.Size = UDim2.new(0, 492, 0, 31)
+
+Title.Name = "Title"
+Title.Parent = TitleBar
+Title.AnchorPoint = Vector2.new(0.5, 0.5)
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Title.BorderSizePixel = 0
+Title.Position = UDim2.new(0, 246, 0, 15)
+Title.Size = UDim2.new(0, 172, 0, 28)
+Title.ZIndex = 2
+Title.Font = Enum.Font.GothamSemibold
+Title.Text = "MoonUI v11 [BETA]"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextScaled = true
+Title.TextSize = 14.000
+Title.TextWrapped = true
+
+UICorner_2.CornerRadius = UDim.new(0.075000003, 0)
+UICorner_2.Parent = TitleBar
+
+BtnFrame.Name = "BtnFrame"
+BtnFrame.Parent = MoonFrame
+BtnFrame.AnchorPoint = Vector2.new(1, 0)
+BtnFrame.BackgroundColor3 = Color3.fromRGB(81, 81, 81)
+BtnFrame.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BtnFrame.BorderSizePixel = 0
+BtnFrame.Position = UDim2.new(0, 493, 0, -41)
+BtnFrame.Size = UDim2.new(0, 493, 0, 32)
+
+Button.Name = "Button"
+Button.Parent = BtnFrame
+Button.AnchorPoint = Vector2.new(1, 0)
+Button.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+Button.BorderSizePixel = 0
+Button.Position = UDim2.new(0, 220, 0, 0)
+Button.Size = UDim2.new(0, 73, 0, 29)
+Button.ZIndex = 2
+Button.Font = Enum.Font.GothamSemibold
+Button.Text = "Scripts"
+Button.TextColor3 = Color3.fromRGB(255, 255, 255)
+Button.TextScaled = true
+Button.TextSize = 14.000
+Button.TextWrapped = true
+
+TextLabel_2.Parent = Button
+TextLabel_2.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextLabel_2.Size = UDim2.new(1.3225807, -20, 1.125, -20)
+TextLabel_2.ZIndex = 2
+TextLabel_2.Font = Enum.Font.GothamSemibold
+TextLabel_2.Text = ""
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+UICorner_3.CornerRadius = UDim.new(0.075000003, 0)
+UICorner_3.Parent = TextLabel_2
+
+UICorner_4.CornerRadius = UDim.new(0.075000003, 0)
+UICorner_4.Parent = Button
+
+Button_2.Name = "Button"
+Button_2.Parent = BtnFrame
+Button_2.AnchorPoint = Vector2.new(1, 0)
+Button_2.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+Button_2.BorderSizePixel = 0
+Button_2.Position = UDim2.new(0, 310, 0, 0)
+Button_2.Size = UDim2.new(0, 90, 0, 29)
+Button_2.ZIndex = 2
+Button_2.Font = Enum.Font.GothamSemibold
+Button_2.Text = "Troll"
+Button_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Button_2.TextScaled = true
+Button_2.TextSize = 14.000
+Button_2.TextWrapped = true
+
+TextLabel_3.Parent = Button_2
+TextLabel_3.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextLabel_3.Size = UDim2.new(1.3225807, -20, 1.125, -20)
+TextLabel_3.ZIndex = 2
+TextLabel_3.Font = Enum.Font.GothamSemibold
+TextLabel_3.Text = ""
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
+
+UICorner_5.CornerRadius = UDim.new(0.075000003, 0)
+UICorner_5.Parent = TextLabel_3
+
+Button_3.Name = "Button"
+Button_3.Parent = BtnFrame
+Button_3.AnchorPoint = Vector2.new(1, 0)
+Button_3.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+Button_3.BorderSizePixel = 0
+Button_3.Position = UDim2.new(0, 485, 0, 33)
+Button_3.Size = UDim2.new(0, 57, 0, 27)
+Button_3.ZIndex = 2
+Button_3.Font = Enum.Font.GothamSemibold
+Button_3.Text = "Credits"
+Button_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Button_3.TextScaled = true
+Button_3.TextSize = 14.000
+Button_3.TextWrapped = true
+
+TextLabel_4.Parent = Button_3
+TextLabel_4.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_4.BorderSizePixel = 0
+TextLabel_4.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextLabel_4.Size = UDim2.new(1.3225807, -20, 1.125, -20)
+TextLabel_4.ZIndex = 2
+TextLabel_4.Font = Enum.Font.GothamSemibold
+TextLabel_4.Text = ""
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextScaled = true
+TextLabel_4.TextSize = 14.000
+TextLabel_4.TextWrapped = true
+
+UICorner_6.CornerRadius = UDim.new(0.075000003, 0)
+UICorner_6.Parent = TextLabel_4
+
+UICorner_7.CornerRadius = UDim.new(0.125, 0)
+UICorner_7.Parent = Button_3
+
+Button_4.Name = "Button"
+Button_4.Parent = BtnFrame
+Button_4.AnchorPoint = Vector2.new(1, 0)
+Button_4.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+Button_4.BorderSizePixel = 0
+Button_4.Position = UDim2.new(0, 394, 0, 0)
+Button_4.Size = UDim2.new(0, 89, 0, 29)
+Button_4.ZIndex = 2
+Button_4.Font = Enum.Font.GothamSemibold
+Button_4.Text = "Executor"
+Button_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+Button_4.TextScaled = true
+Button_4.TextSize = 14.000
+Button_4.TextWrapped = true
+
+TextLabel_5.Parent = Button_4
+TextLabel_5.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_5.BorderSizePixel = 0
+TextLabel_5.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextLabel_5.Size = UDim2.new(1.3225807, -20, 1.125, -20)
+TextLabel_5.ZIndex = 2
+TextLabel_5.Font = Enum.Font.GothamSemibold
+TextLabel_5.Text = ""
+TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.TextScaled = true
+TextLabel_5.TextSize = 14.000
+TextLabel_5.TextWrapped = true
+
+UICorner_8.CornerRadius = UDim.new(0.075000003, 0)
+UICorner_8.Parent = TextLabel_5
+
+Button_5.Name = "Button"
+Button_5.Parent = BtnFrame
+Button_5.AnchorPoint = Vector2.new(1, 0)
+Button_5.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+Button_5.BorderSizePixel = 0
+Button_5.Position = UDim2.new(0, 65, 0, 0)
+Button_5.Size = UDim2.new(0, 65, 0, 29)
+Button_5.ZIndex = 2
+Button_5.Font = Enum.Font.GothamSemibold
+Button_5.Text = "Home"
+Button_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+Button_5.TextScaled = true
+Button_5.TextSize = 14.000
+Button_5.TextWrapped = true
+
+TextLabel_6.Parent = Button_5
+TextLabel_6.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.BackgroundTransparency = 1.000
+TextLabel_6.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_6.BorderSizePixel = 0
+TextLabel_6.Position = UDim2.new(0, 33, 0, 13)
+TextLabel_6.Size = UDim2.new(0, 68, 0, 13)
+TextLabel_6.ZIndex = 2
+TextLabel_6.Font = Enum.Font.GothamSemibold
+TextLabel_6.Text = ""
+TextLabel_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.TextScaled = true
+TextLabel_6.TextSize = 14.000
+TextLabel_6.TextWrapped = true
+
+Button_6.Name = "Button"
+Button_6.Parent = BtnFrame
+Button_6.AnchorPoint = Vector2.new(1, 0)
+Button_6.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+Button_6.BorderSizePixel = 0
+Button_6.Position = UDim2.new(0, 492, 0, 0)
+Button_6.Size = UDim2.new(0, 98, 0, 29)
+Button_6.ZIndex = 2
+Button_6.Font = Enum.Font.GothamSemibold
+Button_6.Text = "SS Executor"
+Button_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+Button_6.TextScaled = true
+Button_6.TextSize = 14.000
+Button_6.TextWrapped = true
+
+TextLabel_7.Parent = Button_6
+TextLabel_7.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.BackgroundTransparency = 1.000
+TextLabel_7.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_7.BorderSizePixel = 0
+TextLabel_7.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextLabel_7.Size = UDim2.new(1.3225807, -20, 1.125, -20)
+TextLabel_7.ZIndex = 2
+TextLabel_7.Font = Enum.Font.GothamSemibold
+TextLabel_7.Text = ""
+TextLabel_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.TextScaled = true
+TextLabel_7.TextSize = 14.000
+TextLabel_7.TextWrapped = true
+
+UICorner_9.CornerRadius = UDim.new(0.075000003, 0)
+UICorner_9.Parent = TextLabel_7
+
+Button_7.Name = "Button"
+Button_7.Parent = BtnFrame
+Button_7.AnchorPoint = Vector2.new(1, 0)
+Button_7.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+Button_7.BorderSizePixel = 0
+Button_7.Position = UDim2.new(0, 147, 0, 0)
+Button_7.Size = UDim2.new(0, 82, 0, 29)
+Button_7.ZIndex = 2
+Button_7.Font = Enum.Font.GothamSemibold
+Button_7.Text = "??"
+Button_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+Button_7.TextScaled = true
+Button_7.TextSize = 14.000
+Button_7.TextWrapped = true
+
+TextLabel_8.Parent = Button_7
+TextLabel_8.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.BackgroundTransparency = 1.000
+TextLabel_8.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_8.BorderSizePixel = 0
+TextLabel_8.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextLabel_8.Size = UDim2.new(1.3225807, -20, 1.125, -20)
+TextLabel_8.ZIndex = 2
+TextLabel_8.Font = Enum.Font.GothamSemibold
+TextLabel_8.Text = ""
+TextLabel_8.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.TextScaled = true
+TextLabel_8.TextSize = 14.000
+TextLabel_8.TextWrapped = true
+
+UICorner_10.CornerRadius = UDim.new(0.075000003, 0)
+UICorner_10.Parent = TextLabel_8
+
+ScriptsUIFrame.Name = "ScriptsUIFrame"
+ScriptsUIFrame.Parent = MoonFrame
+ScriptsUIFrame.AnchorPoint = Vector2.new(1, 0)
+ScriptsUIFrame.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+ScriptsUIFrame.BorderColor3 = Color3.fromRGB(27, 42, 53)
+ScriptsUIFrame.BorderSizePixel = 0
+ScriptsUIFrame.Position = UDim2.new(0, 480, 0, 44)
+ScriptsUIFrame.Size = UDim2.new(0, 452, 0, 187)
+ScriptsUIFrame.Visible = false
+
+ScriptsUITitle.Name = "ScriptsUITitle"
+ScriptsUITitle.Parent = ScriptsUIFrame
+ScriptsUITitle.AnchorPoint = Vector2.new(1, 0)
+ScriptsUITitle.BackgroundColor3 = Color3.fromRGB(81, 81, 81)
+ScriptsUITitle.BorderColor3 = Color3.fromRGB(27, 42, 53)
+ScriptsUITitle.BorderSizePixel = 0
+ScriptsUITitle.Position = UDim2.new(0, 452, 0, 0)
+ScriptsUITitle.Size = UDim2.new(0, 452, 0, 31)
+
+Title_2.Name = "Title"
+Title_2.Parent = ScriptsUITitle
+Title_2.AnchorPoint = Vector2.new(0.5, 0.5)
+Title_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_2.BackgroundTransparency = 1.000
+Title_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Title_2.BorderSizePixel = 0
+Title_2.Position = UDim2.new(0.531504035, 0, 0.483870953, 0)
+Title_2.Size = UDim2.new(0.42479676, -20, 1.93548381, -20)
+Title_2.ZIndex = 2
+Title_2.Font = Enum.Font.GothamSemibold
+Title_2.Text = "Scripts U"
+Title_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_2.TextScaled = true
+Title_2.TextSize = 14.000
+Title_2.TextWrapped = true
+
+MoonIcon.Name = "MoonIcon"
+MoonIcon.Parent = ScriptsUITitle
+MoonIcon.AnchorPoint = Vector2.new(1, 0)
+MoonIcon.BackgroundTransparency = 1.000
+MoonIcon.Position = UDim2.new(0.768656194, 0, 0, 0)
+MoonIcon.Size = UDim2.new(0, 20, 0, 30)
+MoonIcon.ZIndex = 2
+MoonIcon.Image = "rbxassetid://3926307971"
+MoonIcon.ImageRectOffset = Vector2.new(324, 204)
+MoonIcon.ImageRectSize = Vector2.new(36, 36)
+
+ScrollingFrame.Parent = ScriptsUIFrame
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+ScrollingFrame.Position = UDim2.new(0, 3, 0, 35)
+ScrollingFrame.Size = UDim2.new(0, 452, 0, 137)
+
+Button_8.Name = "Button"
+Button_8.Parent = ScrollingFrame
+Button_8.AnchorPoint = Vector2.new(1, 0)
+Button_8.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+Button_8.BorderSizePixel = 0
+Button_8.Position = UDim2.new(0, 79, 0, 8)
+Button_8.Size = UDim2.new(0, 62, 0, 29)
+Button_8.ZIndex = 2
+Button_8.Font = Enum.Font.GothamSemibold
+Button_8.Text = ""
+Button_8.TextColor3 = Color3.fromRGB(255, 255, 255)
+Button_8.TextScaled = true
+Button_8.TextSize = 14.000
+Button_8.TextWrapped = true
+
+TextLabel_9.Parent = Button_8
+TextLabel_9.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_9.BackgroundTransparency = 1.000
+TextLabel_9.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_9.BorderSizePixel = 0
+TextLabel_9.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextLabel_9.Size = UDim2.new(1.32299995, -20, 1.69000006, -20)
+TextLabel_9.ZIndex = 2
+TextLabel_9.Font = Enum.Font.GothamSemibold
+TextLabel_9.Text = "Infinite Yeild"
+TextLabel_9.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_9.TextScaled = true
+TextLabel_9.TextSize = 14.000
+TextLabel_9.TextWrapped = true
+
+UICorner_11.CornerRadius = UDim.new(0.075000003, 0)
+UICorner_11.Parent = Button_8
+
+Button_9.Name = "Button"
+Button_9.Parent = ScrollingFrame
+Button_9.AnchorPoint = Vector2.new(1, 0)
+Button_9.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+Button_9.BorderSizePixel = 0
+Button_9.Position = UDim2.new(0, 439, 0, 8)
+Button_9.Size = UDim2.new(0, 62, 0, 29)
+Button_9.ZIndex = 2
+Button_9.Font = Enum.Font.GothamSemibold
+Button_9.Text = ""
+Button_9.TextColor3 = Color3.fromRGB(255, 255, 255)
+Button_9.TextScaled = true
+Button_9.TextSize = 14.000
+Button_9.TextWrapped = true
+
+TextLabel_10.Parent = Button_9
+TextLabel_10.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_10.BackgroundTransparency = 1.000
+TextLabel_10.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_10.BorderSizePixel = 0
+TextLabel_10.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextLabel_10.Size = UDim2.new(1.32299995, -20, 1.69000006, -20)
+TextLabel_10.ZIndex = 2
+TextLabel_10.Font = Enum.Font.GothamSemibold
+TextLabel_10.Text = "JailBreak UI"
+TextLabel_10.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_10.TextScaled = true
+TextLabel_10.TextSize = 14.000
+TextLabel_10.TextWrapped = true
+
+UICorner_12.CornerRadius = UDim.new(0.075000003, 0)
+UICorner_12.Parent = Button_9
+
+Button_10.Name = "Button"
+Button_10.Parent = ScrollingFrame
+Button_10.AnchorPoint = Vector2.new(1, 0)
+Button_10.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+Button_10.BorderSizePixel = 0
+Button_10.Position = UDim2.new(0, 368, 0, 48)
+Button_10.Size = UDim2.new(0, 62, 0, 29)
+Button_10.ZIndex = 2
+Button_10.Font = Enum.Font.GothamSemibold
+Button_10.Text = ""
+Button_10.TextColor3 = Color3.fromRGB(255, 255, 255)
+Button_10.TextScaled = true
+Button_10.TextSize = 14.000
+Button_10.TextWrapped = true
+
+TextLabel_11.Parent = Button_10
+TextLabel_11.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_11.BackgroundTransparency = 1.000
+TextLabel_11.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_11.BorderSizePixel = 0
+TextLabel_11.Position = UDim2.new(0, 31, 0, 14)
+TextLabel_11.Size = UDim2.new(1.32299995, -20, 1.69000006, -20)
+TextLabel_11.ZIndex = 2
+TextLabel_11.Font = Enum.Font.GothamSemibold
+TextLabel_11.Text = "Synapse X UI"
+TextLabel_11.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_11.TextScaled = true
+TextLabel_11.TextSize = 14.000
+TextLabel_11.TextWrapped = true
+
+UICorner_13.CornerRadius = UDim.new(0.075000003, 0)
+UICorner_13.Parent = Button_10
+
+Button_11.Name = "Button"
+Button_11.Parent = ScrollingFrame
+Button_11.AnchorPoint = Vector2.new(1, 0)
+Button_11.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+Button_11.BorderSizePixel = 0
+Button_11.Position = UDim2.new(0, 223, 0, 8)
+Button_11.Size = UDim2.new(0, 62, 0, 29)
+Button_11.ZIndex = 2
+Button_11.Font = Enum.Font.GothamSemibold
+Button_11.Text = ""
+Button_11.TextColor3 = Color3.fromRGB(255, 255, 255)
+Button_11.TextScaled = true
+Button_11.TextSize = 14.000
+Button_11.TextWrapped = true
+
+TextLabel_12.Parent = Button_11
+TextLabel_12.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_12.BackgroundTransparency = 1.000
+TextLabel_12.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_12.BorderSizePixel = 0
+TextLabel_12.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextLabel_12.Size = UDim2.new(1.32299995, -20, 1.69000006, -20)
+TextLabel_12.ZIndex = 2
+TextLabel_12.Font = Enum.Font.GothamSemibold
+TextLabel_12.Text = "Prison Life UI"
+TextLabel_12.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_12.TextScaled = true
+TextLabel_12.TextSize = 14.000
+TextLabel_12.TextWrapped = true
+
+UICorner_14.CornerRadius = UDim.new(0.075000003, 0)
+UICorner_14.Parent = Button_11
+
+Button_12.Name = "Button"
+Button_12.Parent = ScrollingFrame
+Button_12.AnchorPoint = Vector2.new(1, 0)
+Button_12.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+Button_12.BorderSizePixel = 0
+Button_12.Position = UDim2.new(0, 223, 0, 48)
+Button_12.Size = UDim2.new(0, 62, 0, 29)
+Button_12.ZIndex = 2
+Button_12.Font = Enum.Font.GothamSemibold
+Button_12.Text = ""
+Button_12.TextColor3 = Color3.fromRGB(255, 255, 255)
+Button_12.TextScaled = true
+Button_12.TextSize = 14.000
+Button_12.TextWrapped = true
+
+TextLabel_13.Parent = Button_12
+TextLabel_13.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_13.BackgroundTransparency = 1.000
+TextLabel_13.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_13.BorderSizePixel = 0
+TextLabel_13.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextLabel_13.Size = UDim2.new(1.32299995, -20, 1.69000006, -20)
+TextLabel_13.ZIndex = 2
+TextLabel_13.Font = Enum.Font.GothamSemibold
+TextLabel_13.Text = "Admin UI"
+TextLabel_13.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_13.TextScaled = true
+TextLabel_13.TextSize = 14.000
+TextLabel_13.TextWrapped = true
+
+UICorner_15.CornerRadius = UDim.new(0.075000003, 0)
+UICorner_15.Parent = Button_12
+
+Button_13.Name = "Button"
+Button_13.Parent = ScrollingFrame
+Button_13.AnchorPoint = Vector2.new(1, 0)
+Button_13.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+Button_13.BorderSizePixel = 0
+Button_13.Position = UDim2.new(0, 294, 0, 48)
+Button_13.Size = UDim2.new(0, 62, 0, 29)
+Button_13.ZIndex = 2
+Button_13.Font = Enum.Font.GothamSemibold
+Button_13.Text = ""
+Button_13.TextColor3 = Color3.fromRGB(255, 255, 255)
+Button_13.TextScaled = true
+Button_13.TextSize = 14.000
+Button_13.TextWrapped = true
+
+TextLabel_14.Parent = Button_13
+TextLabel_14.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_14.BackgroundTransparency = 1.000
+TextLabel_14.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_14.BorderSizePixel = 0
+TextLabel_14.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextLabel_14.Size = UDim2.new(1.32299995, -20, 1.69000006, -20)
+TextLabel_14.ZIndex = 2
+TextLabel_14.Font = Enum.Font.GothamSemibold
+TextLabel_14.Text = "Admin UI 2"
+TextLabel_14.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_14.TextScaled = true
+TextLabel_14.TextSize = 14.000
+TextLabel_14.TextWrapped = true
+
+UICorner_16.CornerRadius = UDim.new(0.075000003, 0)
+UICorner_16.Parent = Button_13
+
+Button_14.Name = "Button"
+Button_14.Parent = ScrollingFrame
+Button_14.AnchorPoint = Vector2.new(1, 0)
+Button_14.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+Button_14.BorderSizePixel = 0
+Button_14.Position = UDim2.new(0, 439, 0, 48)
+Button_14.Size = UDim2.new(0, 62, 0, 29)
+Button_14.ZIndex = 2
+Button_14.Font = Enum.Font.GothamSemibold
+Button_14.Text = ""
+Button_14.TextColor3 = Color3.fromRGB(255, 255, 255)
+Button_14.TextScaled = true
+Button_14.TextSize = 14.000
+Button_14.TextWrapped = true
+
+TextLabel_15.Parent = Button_14
+TextLabel_15.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_15.BackgroundTransparency = 1.000
+TextLabel_15.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_15.BorderSizePixel = 0
+TextLabel_15.Position = UDim2.new(0, 31, 0, 14)
+TextLabel_15.Size = UDim2.new(1.32299995, -20, 1.69000006, -20)
+TextLabel_15.ZIndex = 2
+TextLabel_15.Font = Enum.Font.GothamSemibold
+TextLabel_15.Text = "Chat Bypasser"
+TextLabel_15.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_15.TextScaled = true
+TextLabel_15.TextSize = 14.000
+TextLabel_15.TextWrapped = true
+
+UICorner_17.CornerRadius = UDim.new(0.075000003, 0)
+UICorner_17.Parent = Button_14
+
+Button_15.Name = "Button"
+Button_15.Parent = ScrollingFrame
+Button_15.AnchorPoint = Vector2.new(1, 0)
+Button_15.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+Button_15.BorderSizePixel = 0
+Button_15.Position = UDim2.new(0, 154, 0, 8)
+Button_15.Size = UDim2.new(0, 62, 0, 29)
+Button_15.ZIndex = 2
+Button_15.Font = Enum.Font.GothamSemibold
+Button_15.Text = ""
+Button_15.TextColor3 = Color3.fromRGB(255, 255, 255)
+Button_15.TextScaled = true
+Button_15.TextSize = 14.000
+Button_15.TextWrapped = true
+
+TextLabel_16.Parent = Button_15
+TextLabel_16.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_16.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_16.BackgroundTransparency = 1.000
+TextLabel_16.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_16.BorderSizePixel = 0
+TextLabel_16.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextLabel_16.Size = UDim2.new(1.32299995, -20, 1.69000006, -20)
+TextLabel_16.ZIndex = 2
+TextLabel_16.Font = Enum.Font.GothamSemibold
+TextLabel_16.Text = "Opifinality"
+TextLabel_16.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_16.TextScaled = true
+TextLabel_16.TextSize = 14.000
+TextLabel_16.TextWrapped = true
+
+UICorner_18.CornerRadius = UDim.new(0.075000003, 0)
+UICorner_18.Parent = Button_15
+
+Button_16.Name = "Button"
+Button_16.Parent = ScrollingFrame
+Button_16.AnchorPoint = Vector2.new(1, 0)
+Button_16.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+Button_16.BorderSizePixel = 0
+Button_16.Position = UDim2.new(0, 154, 0, 48)
+Button_16.Size = UDim2.new(0, 62, 0, 29)
+Button_16.ZIndex = 2
+Button_16.Font = Enum.Font.GothamSemibold
+Button_16.Text = ""
+Button_16.TextColor3 = Color3.fromRGB(255, 255, 255)
+Button_16.TextScaled = true
+Button_16.TextSize = 14.000
+Button_16.TextWrapped = true
+
+TextLabel_17.Parent = Button_16
+TextLabel_17.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_17.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_17.BackgroundTransparency = 1.000
+TextLabel_17.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_17.BorderSizePixel = 0
+TextLabel_17.Position = UDim2.new(0, 32, 0, 14)
+TextLabel_17.Size = UDim2.new(1.32299995, -20, 1.69000006, -20)
+TextLabel_17.ZIndex = 2
+TextLabel_17.Font = Enum.Font.GothamSemibold
+TextLabel_17.Text = "V3rm Tabs"
+TextLabel_17.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_17.TextScaled = true
+TextLabel_17.TextSize = 14.000
+TextLabel_17.TextWrapped = true
+
+UICorner_19.CornerRadius = UDim.new(0.075000003, 0)
+UICorner_19.Parent = Button_16
+
+Button_17.Name = "Button"
+Button_17.Parent = ScrollingFrame
+Button_17.AnchorPoint = Vector2.new(1, 0)
+Button_17.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+Button_17.BorderSizePixel = 0
+Button_17.Position = UDim2.new(0, 79, 0, 90)
+Button_17.Size = UDim2.new(0, 62, 0, 29)
+Button_17.ZIndex = 2
+Button_17.Font = Enum.Font.GothamSemibold
+Button_17.Text = ""
+Button_17.TextColor3 = Color3.fromRGB(255, 255, 255)
+Button_17.TextScaled = true
+Button_17.TextSize = 14.000
+Button_17.TextWrapped = true
+
+TextLabel_18.Parent = Button_17
+TextLabel_18.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_18.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_18.BackgroundTransparency = 1.000
+TextLabel_18.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_18.BorderSizePixel = 0
+TextLabel_18.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextLabel_18.Size = UDim2.new(1.32299995, -20, 1.69000006, -20)
+TextLabel_18.ZIndex = 2
+TextLabel_18.Font = Enum.Font.GothamSemibold
+TextLabel_18.Text = "Cobra Kai UI"
+TextLabel_18.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_18.TextScaled = true
+TextLabel_18.TextSize = 14.000
+TextLabel_18.TextWrapped = true
+
+TextLabel_19.Parent = Button_17
+TextLabel_19.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_19.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_19.BackgroundTransparency = 1.000
+TextLabel_19.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_19.BorderSizePixel = 0
+TextLabel_19.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextLabel_19.Size = UDim2.new(1.32299995, -20, 1.69000006, -20)
+TextLabel_19.ZIndex = 2
+TextLabel_19.Font = Enum.Font.GothamSemibold
+TextLabel_19.Text = "Cobra Kai UI"
+TextLabel_19.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_19.TextScaled = true
+TextLabel_19.TextSize = 14.000
+TextLabel_19.TextWrapped = true
+
+UICorner_20.CornerRadius = UDim.new(0.075000003, 0)
+UICorner_20.Parent = Button_17
+
+Button_18.Name = "Button"
+Button_18.Parent = ScrollingFrame
+Button_18.AnchorPoint = Vector2.new(1, 0)
+Button_18.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+Button_18.BorderSizePixel = 0
+Button_18.Position = UDim2.new(0, 367, 0, 8)
+Button_18.Size = UDim2.new(0, 62, 0, 29)
+Button_18.ZIndex = 2
+Button_18.Font = Enum.Font.GothamSemibold
+Button_18.Text = ""
+Button_18.TextColor3 = Color3.fromRGB(255, 255, 255)
+Button_18.TextScaled = true
+Button_18.TextSize = 14.000
+Button_18.TextWrapped = true
+
+TextLabel_20.Parent = Button_18
+TextLabel_20.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_20.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_20.BackgroundTransparency = 1.000
+TextLabel_20.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_20.BorderSizePixel = 0
+TextLabel_20.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextLabel_20.Size = UDim2.new(1.32299995, -20, 1.69000006, -20)
+TextLabel_20.ZIndex = 2
+TextLabel_20.Font = Enum.Font.GothamSemibold
+TextLabel_20.Text = "Revis Admin"
+TextLabel_20.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_20.TextScaled = true
+TextLabel_20.TextSize = 14.000
+TextLabel_20.TextWrapped = true
+
+UICorner_21.CornerRadius = UDim.new(0.075000003, 0)
+UICorner_21.Parent = Button_18
+
+Button_19.Name = "Button"
+Button_19.Parent = ScrollingFrame
+Button_19.AnchorPoint = Vector2.new(1, 0)
+Button_19.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+Button_19.BorderSizePixel = 0
+Button_19.Position = UDim2.new(0, 79, 0, 48)
+Button_19.Size = UDim2.new(0, 62, 0, 29)
+Button_19.ZIndex = 2
+Button_19.Font = Enum.Font.GothamSemibold
+Button_19.Text = ""
+Button_19.TextColor3 = Color3.fromRGB(255, 255, 255)
+Button_19.TextScaled = true
+Button_19.TextSize = 14.000
+Button_19.TextWrapped = true
+
+TextLabel_21.Parent = Button_19
+TextLabel_21.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_21.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_21.BackgroundTransparency = 1.000
+TextLabel_21.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_21.BorderSizePixel = 0
+TextLabel_21.Position = UDim2.new(0, 31, 0, 15)
+TextLabel_21.Size = UDim2.new(1.32299995, -20, 1.69000006, -20)
+TextLabel_21.ZIndex = 2
+TextLabel_21.Font = Enum.Font.GothamSemibold
+TextLabel_21.Text = "Animation UI"
+TextLabel_21.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_21.TextScaled = true
+TextLabel_21.TextSize = 14.000
+TextLabel_21.TextWrapped = true
+
+UICorner_22.CornerRadius = UDim.new(0.075000003, 0)
+UICorner_22.Parent = Button_19
+
+Button_20.Name = "Button"
+Button_20.Parent = ScrollingFrame
+Button_20.AnchorPoint = Vector2.new(1, 0)
+Button_20.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+Button_20.BorderSizePixel = 0
+Button_20.Position = UDim2.new(0, 154, 0, 90)
+Button_20.Size = UDim2.new(0, 62, 0, 29)
+Button_20.ZIndex = 2
+Button_20.Font = Enum.Font.GothamSemibold
+Button_20.Text = ""
+Button_20.TextColor3 = Color3.fromRGB(255, 255, 255)
+Button_20.TextScaled = true
+Button_20.TextSize = 14.000
+Button_20.TextWrapped = true
+
+TextLabel_22.Parent = Button_20
+TextLabel_22.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_22.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_22.BackgroundTransparency = 1.000
+TextLabel_22.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_22.BorderSizePixel = 0
+TextLabel_22.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextLabel_22.Size = UDim2.new(1.32299995, -20, 1.69000006, -20)
+TextLabel_22.ZIndex = 2
+TextLabel_22.Font = Enum.Font.GothamSemibold
+TextLabel_22.Text = "Case Clicker UI"
+TextLabel_22.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_22.TextScaled = true
+TextLabel_22.TextSize = 14.000
+TextLabel_22.TextWrapped = true
+
+UICorner_23.CornerRadius = UDim.new(0.075000003, 0)
+UICorner_23.Parent = Button_20
+
+Button_21.Name = "Button"
+Button_21.Parent = ScrollingFrame
+Button_21.AnchorPoint = Vector2.new(1, 0)
+Button_21.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+Button_21.BorderSizePixel = 0
+Button_21.Position = UDim2.new(0, 294, 0, 8)
+Button_21.Size = UDim2.new(0, 62, 0, 29)
+Button_21.ZIndex = 2
+Button_21.Font = Enum.Font.GothamSemibold
+Button_21.Text = ""
+Button_21.TextColor3 = Color3.fromRGB(255, 255, 255)
+Button_21.TextScaled = true
+Button_21.TextSize = 14.000
+Button_21.TextWrapped = true
+
+TextLabel_23.Parent = Button_21
+TextLabel_23.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_23.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_23.BackgroundTransparency = 1.000
+TextLabel_23.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_23.BorderSizePixel = 0
+TextLabel_23.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextLabel_23.Size = UDim2.new(1.32299995, -20, 1.69000006, -20)
+TextLabel_23.ZIndex = 2
+TextLabel_23.Font = Enum.Font.GothamSemibold
+TextLabel_23.Text = "Rose Hub"
+TextLabel_23.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_23.TextScaled = true
+TextLabel_23.TextSize = 14.000
+TextLabel_23.TextWrapped = true
+
+UICorner_24.CornerRadius = UDim.new(0.075000003, 0)
+UICorner_24.Parent = Button_21
+
+Button_22.Name = "Button"
+Button_22.Parent = ScrollingFrame
+Button_22.AnchorPoint = Vector2.new(1, 0)
+Button_22.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+Button_22.BorderSizePixel = 0
+Button_22.Position = UDim2.new(0, 223, 0, 90)
+Button_22.Size = UDim2.new(0, 62, 0, 29)
+Button_22.ZIndex = 2
+Button_22.Font = Enum.Font.GothamSemibold
+Button_22.Text = ""
+Button_22.TextColor3 = Color3.fromRGB(255, 255, 255)
+Button_22.TextScaled = true
+Button_22.TextSize = 14.000
+Button_22.TextWrapped = true
+
+TextLabel_24.Parent = Button_22
+TextLabel_24.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_24.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_24.BackgroundTransparency = 1.000
+TextLabel_24.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_24.BorderSizePixel = 0
+TextLabel_24.Position = UDim2.new(0.5, 0, 0.471265048, 0)
+TextLabel_24.Size = UDim2.new(1.3225807, -20, 1.33563232, -20)
+TextLabel_24.ZIndex = 2
+TextLabel_24.Font = Enum.Font.GothamSemibold
+TextLabel_24.Text = "Dark Dex"
+TextLabel_24.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_24.TextScaled = true
+TextLabel_24.TextSize = 14.000
+TextLabel_24.TextWrapped = true
+
+UICorner_25.CornerRadius = UDim.new(0.075000003, 0)
+UICorner_25.Parent = Button_22
+
+Button_23.Name = "Button"
+Button_23.Parent = ScrollingFrame
+Button_23.AnchorPoint = Vector2.new(1, 0)
+Button_23.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+Button_23.BorderSizePixel = 0
+Button_23.Position = UDim2.new(0, 295, 0, 90)
+Button_23.Size = UDim2.new(0, 62, 0, 29)
+Button_23.ZIndex = 2
+Button_23.Font = Enum.Font.GothamSemibold
+Button_23.Text = ""
+Button_23.TextColor3 = Color3.fromRGB(255, 255, 255)
+Button_23.TextScaled = true
+Button_23.TextSize = 14.000
+Button_23.TextWrapped = true
+
+TextLabel_25.Parent = Button_23
+TextLabel_25.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_25.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_25.BackgroundTransparency = 1.000
+TextLabel_25.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_25.BorderSizePixel = 0
+TextLabel_25.Position = UDim2.new(0.5, 0, 0.471265048, 0)
+TextLabel_25.Size = UDim2.new(1.3225807, -20, 1.33563232, -20)
+TextLabel_25.ZIndex = 2
+TextLabel_25.Font = Enum.Font.GothamSemibold
+TextLabel_25.Text = "Xester (FE)"
+TextLabel_25.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_25.TextScaled = true
+TextLabel_25.TextSize = 14.000
+TextLabel_25.TextWrapped = true
+
+UICorner_26.CornerRadius = UDim.new(0.075000003, 0)
+UICorner_26.Parent = Button_23
+
+Button_24.Name = "Button"
+Button_24.Parent = ScrollingFrame
+Button_24.AnchorPoint = Vector2.new(1, 0)
+Button_24.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+Button_24.BorderSizePixel = 0
+Button_24.Position = UDim2.new(0, 366, 0, 89)
+Button_24.Size = UDim2.new(0, 62, 0, 29)
+Button_24.ZIndex = 2
+Button_24.Font = Enum.Font.GothamSemibold
+Button_24.Text = ""
+Button_24.TextColor3 = Color3.fromRGB(255, 255, 255)
+Button_24.TextScaled = true
+Button_24.TextSize = 14.000
+Button_24.TextWrapped = true
+
+TextLabel_26.Parent = Button_24
+TextLabel_26.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_26.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_26.BackgroundTransparency = 1.000
+TextLabel_26.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_26.BorderSizePixel = 0
+TextLabel_26.Position = UDim2.new(0.5, 0, 0.471265048, 0)
+TextLabel_26.Size = UDim2.new(1.3225807, -20, 1.33563232, -20)
+TextLabel_26.ZIndex = 2
+TextLabel_26.Font = Enum.Font.GothamSemibold
+TextLabel_26.Text = "Sonic (FE)"
+TextLabel_26.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_26.TextScaled = true
+TextLabel_26.TextSize = 14.000
+TextLabel_26.TextWrapped = true
+
+UICorner_27.CornerRadius = UDim.new(0.075000003, 0)
+UICorner_27.Parent = Button_24
+
+Button_25.Name = "Button"
+Button_25.Parent = ScrollingFrame
+Button_25.AnchorPoint = Vector2.new(1, 0)
+Button_25.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+Button_25.BorderSizePixel = 0
+Button_25.Position = UDim2.new(0, 439, 0, 90)
+Button_25.Size = UDim2.new(0, 62, 0, 29)
+Button_25.ZIndex = 2
+Button_25.Font = Enum.Font.GothamSemibold
+Button_25.Text = ""
+Button_25.TextColor3 = Color3.fromRGB(255, 255, 255)
+Button_25.TextScaled = true
+Button_25.TextSize = 14.000
+Button_25.TextWrapped = true
+
+TextLabel_27.Parent = Button_25
+TextLabel_27.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_27.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_27.BackgroundTransparency = 1.000
+TextLabel_27.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_27.BorderSizePixel = 0
+TextLabel_27.Position = UDim2.new(0.5, 0, 0.471265048, 0)
+TextLabel_27.Size = UDim2.new(1.3225807, -20, 1.33563232, -20)
+TextLabel_27.ZIndex = 2
+TextLabel_27.Font = Enum.Font.GothamSemibold
+TextLabel_27.Text = "Cadcus (FE)"
+TextLabel_27.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_27.TextScaled = true
+TextLabel_27.TextSize = 14.000
+TextLabel_27.TextWrapped = true
+
+UICorner_28.CornerRadius = UDim.new(0.075000003, 0)
+UICorner_28.Parent = Button_25
+
+Button_26.Name = "Button"
+Button_26.Parent = ScrollingFrame
+Button_26.AnchorPoint = Vector2.new(1, 0)
+Button_26.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+Button_26.BorderSizePixel = 0
+Button_26.Position = UDim2.new(0, 79, 0, 127)
+Button_26.Size = UDim2.new(0, 62, 0, 29)
+Button_26.ZIndex = 2
+Button_26.Font = Enum.Font.GothamSemibold
+Button_26.Text = ""
+Button_26.TextColor3 = Color3.fromRGB(255, 255, 255)
+Button_26.TextScaled = true
+Button_26.TextSize = 14.000
+Button_26.TextWrapped = true
+
+TextLabel_28.Parent = Button_26
+TextLabel_28.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_28.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_28.BackgroundTransparency = 1.000
+TextLabel_28.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_28.BorderSizePixel = 0
+TextLabel_28.Position = UDim2.new(0.5, 0, 0.471265048, 0)
+TextLabel_28.Size = UDim2.new(1.3225807, -20, 1.33563232, -20)
+TextLabel_28.ZIndex = 2
+TextLabel_28.Font = Enum.Font.GothamSemibold
+TextLabel_28.Text = "Neko (FE)"
+TextLabel_28.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_28.TextScaled = true
+TextLabel_28.TextSize = 14.000
+TextLabel_28.TextWrapped = true
+
+TextLabel_29.Parent = Button_26
+TextLabel_29.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_29.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_29.BackgroundTransparency = 1.000
+TextLabel_29.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_29.BorderSizePixel = 0
+TextLabel_29.Position = UDim2.new(0.5, 0, 0.471265048, 0)
+TextLabel_29.Size = UDim2.new(1.3225807, -20, 1.33563232, -20)
+TextLabel_29.ZIndex = 2
+TextLabel_29.Font = Enum.Font.GothamSemibold
+TextLabel_29.Text = "Neko (FE)"
+TextLabel_29.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_29.TextScaled = true
+TextLabel_29.TextSize = 14.000
+TextLabel_29.TextWrapped = true
+
+UICorner_29.CornerRadius = UDim.new(0.075000003, 0)
+UICorner_29.Parent = Button_26
+
+Button_27.Name = "Button"
+Button_27.Parent = ScrollingFrame
+Button_27.AnchorPoint = Vector2.new(1, 0)
+Button_27.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+Button_27.BorderSizePixel = 0
+Button_27.Position = UDim2.new(0, 155, 0, 127)
+Button_27.Size = UDim2.new(0, 62, 0, 29)
+Button_27.ZIndex = 2
+Button_27.Font = Enum.Font.GothamSemibold
+Button_27.Text = ""
+Button_27.TextColor3 = Color3.fromRGB(255, 255, 255)
+Button_27.TextScaled = true
+Button_27.TextSize = 14.000
+Button_27.TextWrapped = true
+
+TextLabel_30.Parent = Button_27
+TextLabel_30.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_30.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_30.BackgroundTransparency = 1.000
+TextLabel_30.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_30.BorderSizePixel = 0
+TextLabel_30.Position = UDim2.new(0.5, 0, 0.471265048, 0)
+TextLabel_30.Size = UDim2.new(1.3225807, -20, 1.33563232, -20)
+TextLabel_30.ZIndex = 2
+TextLabel_30.Font = Enum.Font.GothamSemibold
+TextLabel_30.Text = "Distraced (FE)"
+TextLabel_30.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_30.TextScaled = true
+TextLabel_30.TextSize = 14.000
+TextLabel_30.TextWrapped = true
+
+TextLabel_31.Parent = Button_27
+TextLabel_31.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_31.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_31.BackgroundTransparency = 1.000
+TextLabel_31.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_31.BorderSizePixel = 0
+TextLabel_31.Position = UDim2.new(0.5, 0, 0.471265048, 0)
+TextLabel_31.Size = UDim2.new(1.3225807, -20, 1.33563232, -20)
+TextLabel_31.ZIndex = 2
+TextLabel_31.Font = Enum.Font.GothamSemibold
+TextLabel_31.Text = ""
+TextLabel_31.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_31.TextScaled = true
+TextLabel_31.TextSize = 14.000
+TextLabel_31.TextWrapped = true
+
+UICorner_30.CornerRadius = UDim.new(0.075000003, 0)
+UICorner_30.Parent = Button_27
+
+Button_28.Name = "Button"
+Button_28.Parent = ScrollingFrame
+Button_28.AnchorPoint = Vector2.new(1, 0)
+Button_28.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+Button_28.BorderSizePixel = 0
+Button_28.Position = UDim2.new(0, 222, 0, 127)
+Button_28.Size = UDim2.new(0, 62, 0, 29)
+Button_28.ZIndex = 2
+Button_28.Font = Enum.Font.GothamSemibold
+Button_28.Text = ""
+Button_28.TextColor3 = Color3.fromRGB(255, 255, 255)
+Button_28.TextScaled = true
+Button_28.TextSize = 14.000
+Button_28.TextWrapped = true
+
+TextLabel_32.Parent = Button_28
+TextLabel_32.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_32.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_32.BackgroundTransparency = 1.000
+TextLabel_32.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_32.BorderSizePixel = 0
+TextLabel_32.Position = UDim2.new(0.5, 0, 0.471265048, 0)
+TextLabel_32.Size = UDim2.new(1.3225807, -20, 1.33563232, -20)
+TextLabel_32.ZIndex = 2
+TextLabel_32.Font = Enum.Font.GothamSemibold
+TextLabel_32.Text = "Krystal Dance (FE)"
+TextLabel_32.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_32.TextScaled = true
+TextLabel_32.TextSize = 14.000
+TextLabel_32.TextWrapped = true
+
+TextLabel_33.Parent = Button_28
+TextLabel_33.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_33.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_33.BackgroundTransparency = 1.000
+TextLabel_33.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_33.BorderSizePixel = 0
+TextLabel_33.Position = UDim2.new(0.5, 0, 0.471265048, 0)
+TextLabel_33.Size = UDim2.new(1.3225807, -20, 1.33563232, -20)
+TextLabel_33.ZIndex = 2
+TextLabel_33.Font = Enum.Font.GothamSemibold
+TextLabel_33.Text = ""
+TextLabel_33.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_33.TextScaled = true
+TextLabel_33.TextSize = 14.000
+TextLabel_33.TextWrapped = true
+
+UICorner_31.CornerRadius = UDim.new(0.075000003, 0)
+UICorner_31.Parent = Button_28
+
+Button_29.Name = "Button"
+Button_29.Parent = ScrollingFrame
+Button_29.AnchorPoint = Vector2.new(1, 0)
+Button_29.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+Button_29.BorderSizePixel = 0
+Button_29.Position = UDim2.new(0, 295, 0, 127)
+Button_29.Size = UDim2.new(0, 62, 0, 29)
+Button_29.ZIndex = 2
+Button_29.Font = Enum.Font.GothamSemibold
+Button_29.Text = ""
+Button_29.TextColor3 = Color3.fromRGB(255, 255, 255)
+Button_29.TextScaled = true
+Button_29.TextSize = 14.000
+Button_29.TextWrapped = true
+
+TextLabel_34.Parent = Button_29
+TextLabel_34.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_34.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_34.BackgroundTransparency = 1.000
+TextLabel_34.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_34.BorderSizePixel = 0
+TextLabel_34.Position = UDim2.new(0.5, 0, 0.471265048, 0)
+TextLabel_34.Size = UDim2.new(1.3225807, -20, 1.33563232, -20)
+TextLabel_34.ZIndex = 2
+TextLabel_34.Font = Enum.Font.GothamSemibold
+TextLabel_34.Text = "VR (FE)"
+TextLabel_34.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_34.TextScaled = true
+TextLabel_34.TextSize = 14.000
+TextLabel_34.TextWrapped = true
+
+TextLabel_35.Parent = Button_29
+TextLabel_35.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_35.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_35.BackgroundTransparency = 1.000
+TextLabel_35.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_35.BorderSizePixel = 0
+TextLabel_35.Position = UDim2.new(0.5, 0, 0.471265048, 0)
+TextLabel_35.Size = UDim2.new(1.3225807, -20, 1.33563232, -20)
+TextLabel_35.ZIndex = 2
+TextLabel_35.Font = Enum.Font.GothamSemibold
+TextLabel_35.Text = ""
+TextLabel_35.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_35.TextScaled = true
+TextLabel_35.TextSize = 14.000
+TextLabel_35.TextWrapped = true
+
+UICorner_32.CornerRadius = UDim.new(0.075000003, 0)
+UICorner_32.Parent = Button_29
+
+Button_30.Name = "Button"
+Button_30.Parent = ScrollingFrame
+Button_30.AnchorPoint = Vector2.new(1, 0)
+Button_30.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+Button_30.BorderSizePixel = 0
+Button_30.Position = UDim2.new(0.849624515, 0, 0.335434228, 0)
+Button_30.Size = UDim2.new(0, 81, 0, 32)
+Button_30.ZIndex = 2
+Button_30.Font = Enum.Font.GothamSemibold
+Button_30.Text = ""
+Button_30.TextColor3 = Color3.fromRGB(255, 255, 255)
+Button_30.TextScaled = true
+Button_30.TextSize = 14.000
+Button_30.TextWrapped = true
+
+TextLabel_36.Parent = Button_30
+TextLabel_36.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_36.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_36.BackgroundTransparency = 1.000
+TextLabel_36.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_36.BorderSizePixel = 0
+TextLabel_36.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextLabel_36.Size = UDim2.new(1, -20, 1, -20)
+TextLabel_36.ZIndex = 2
+TextLabel_36.Font = Enum.Font.GothamSemibold
+TextLabel_36.Text = "Owl Hub"
+TextLabel_36.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_36.TextScaled = true
+TextLabel_36.TextSize = 14.000
+TextLabel_36.TextWrapped = true
+
+UICorner_33.CornerRadius = UDim.new(0.075000003, 0)
+UICorner_33.Parent = TextLabel_36
+
+UICorner_34.CornerRadius = UDim.new(0.075000003, 0)
+UICorner_34.Parent = Button_30
+
+UICorner_35.CornerRadius = UDim.new(0.075000003, 0)
+UICorner_35.Parent = ScrollingFrame
+
+FunUIFrame.Name = "FunUIFrame"
+FunUIFrame.Parent = MoonFrame
+FunUIFrame.AnchorPoint = Vector2.new(1, 0)
+FunUIFrame.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+FunUIFrame.BorderColor3 = Color3.fromRGB(27, 42, 53)
+FunUIFrame.BorderSizePixel = 0
+FunUIFrame.Position = UDim2.new(0, 480, 0, 44)
+FunUIFrame.Size = UDim2.new(0, 452, 0, 172)
+FunUIFrame.Visible = false
+
+FunUITitle.Name = "FunUITitle"
+FunUITitle.Parent = FunUIFrame
+FunUITitle.AnchorPoint = Vector2.new(1, 0)
+FunUITitle.BackgroundColor3 = Color3.fromRGB(81, 81, 81)
+FunUITitle.BorderColor3 = Color3.fromRGB(27, 42, 53)
+FunUITitle.BorderSizePixel = 0
+FunUITitle.Position = UDim2.new(1, 0, 0, 0)
+FunUITitle.Size = UDim2.new(0, 452, 0, 31)
+
+Title_3.Name = "Title"
+Title_3.Parent = FunUITitle
+Title_3.AnchorPoint = Vector2.new(0.5, 0.5)
+Title_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_3.BackgroundTransparency = 1.000
+Title_3.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Title_3.BorderSizePixel = 0
+Title_3.Position = UDim2.new(0.531504035, 0, 0.483870953, 0)
+Title_3.Size = UDim2.new(0.42479676, -20, 1.93548381, -20)
+Title_3.ZIndex = 2
+Title_3.Font = Enum.Font.GothamSemibold
+Title_3.Text = "Troll UI"
+Title_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_3.TextScaled = true
+Title_3.TextSize = 14.000
+Title_3.TextWrapped = true
+
+UICorner_36.CornerRadius = UDim.new(0.075000003, 0)
+UICorner_36.Parent = Title_3
+
+UICorner_37.CornerRadius = UDim.new(0.075000003, 0)
+UICorner_37.Parent = FunUITitle
+
+TextButton.Parent = FunUIFrame
+TextButton.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+TextButton.Position = UDim2.new(0.0199115053, 0, 0.244186044, 0)
+TextButton.Size = UDim2.new(0, 134, 0, 39)
+TextButton.Font = Enum.Font.Cartoon
+TextButton.Text = "Kill All"
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextSize = 14.000
+
+UICorner_38.CornerRadius = UDim.new(0.075000003, 0)
+UICorner_38.Parent = TextButton
+
+TextButton_2.Parent = FunUIFrame
+TextButton_2.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+TextButton_2.Position = UDim2.new(0.0199115053, 0, 0.511627913, 0)
+TextButton_2.Size = UDim2.new(0, 134, 0, 39)
+TextButton_2.Font = Enum.Font.Cartoon
+TextButton_2.Text = "TP All To You"
+TextButton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_2.TextSize = 14.000
+
+UICorner_39.CornerRadius = UDim.new(0.075000003, 0)
+UICorner_39.Parent = TextButton_2
+
+TextButton_3.Parent = FunUIFrame
+TextButton_3.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+TextButton_3.Position = UDim2.new(0.0199115053, 0, 0.773255825, 0)
+TextButton_3.Size = UDim2.new(0, 134, 0, 32)
+TextButton_3.Font = Enum.Font.Cartoon
+TextButton_3.Text = "Kick All"
+TextButton_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_3.TextSize = 14.000
+
+UICorner_40.CornerRadius = UDim.new(0.075000003, 0)
+UICorner_40.Parent = TextButton_3
+
+TextButton_4.Parent = FunUIFrame
+TextButton_4.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+TextButton_4.Position = UDim2.new(0.340707958, 0, 0.244186044, 0)
+TextButton_4.Size = UDim2.new(0, 119, 0, 123)
+TextButton_4.Font = Enum.Font.Cartoon
+TextButton_4.Text = "Remove BasePlate"
+TextButton_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_4.TextSize = 14.000
+
+UICorner_41.CornerRadius = UDim.new(0.075000003, 0)
+UICorner_41.Parent = TextButton_4
+
+TextButton_5.Parent = FunUIFrame
+TextButton_5.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+TextButton_5.Position = UDim2.new(0.623893797, 0, 0.244186044, 0)
+TextButton_5.Size = UDim2.new(0, 156, 0, 123)
+TextButton_5.Font = Enum.Font.Cartoon
+TextButton_5.Text = "Remove Both Legs All"
+TextButton_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_5.TextSize = 14.000
+
+UICorner_42.CornerRadius = UDim.new(0.075000003, 0)
+UICorner_42.Parent = TextButton_5
+
+CreditsUIFrame.Name = "CreditsUIFrame"
+CreditsUIFrame.Parent = MoonFrame
+CreditsUIFrame.AnchorPoint = Vector2.new(1, 0)
+CreditsUIFrame.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+CreditsUIFrame.BorderColor3 = Color3.fromRGB(27, 42, 53)
+CreditsUIFrame.BorderSizePixel = 0
+CreditsUIFrame.Position = UDim2.new(0, 480, 0, 44)
+CreditsUIFrame.Size = UDim2.new(0, 452, 0, 172)
+CreditsUIFrame.Visible = false
+
+CreditsUITitle.Name = "CreditsUITitle"
+CreditsUITitle.Parent = CreditsUIFrame
+CreditsUITitle.AnchorPoint = Vector2.new(1, 0)
+CreditsUITitle.BackgroundColor3 = Color3.fromRGB(81, 81, 81)
+CreditsUITitle.BorderColor3 = Color3.fromRGB(27, 42, 53)
+CreditsUITitle.BorderSizePixel = 0
+CreditsUITitle.Position = UDim2.new(1, 0, 0, 0)
+CreditsUITitle.Size = UDim2.new(0, 458, 0, 31)
+
+Title_4.Name = "Title"
+Title_4.Parent = CreditsUITitle
+Title_4.AnchorPoint = Vector2.new(0.5, 0.5)
+Title_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_4.BackgroundTransparency = 1.000
+Title_4.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Title_4.BorderSizePixel = 0
+Title_4.Position = UDim2.new(0.531504035, 0, 0.483870953, 0)
+Title_4.Size = UDim2.new(0.42479676, -20, 1.93548381, -20)
+Title_4.ZIndex = 2
+Title_4.Font = Enum.Font.GothamSemibold
+Title_4.Text = "SS Executor"
+Title_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_4.TextScaled = true
+Title_4.TextSize = 14.000
+Title_4.TextWrapped = true
+
+UICorner_43.CornerRadius = UDim.new(0.075000003, 0)
+UICorner_43.Parent = Title_4
+
+Title_5.Name = "Title"
+Title_5.Parent = CreditsUITitle
+Title_5.AnchorPoint = Vector2.new(0.5, 0.5)
+Title_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_5.BackgroundTransparency = 1.000
+Title_5.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Title_5.BorderSizePixel = 0
+Title_5.Position = UDim2.new(0.114965782, 0, 1.67858052, 0)
+Title_5.Size = UDim2.new(0.216405481, -20, 1.55070937, -20)
+Title_5.ZIndex = 2
+Title_5.Font = Enum.Font.GothamSemibold
+Title_5.Text = "MostlyPurp:"
+Title_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_5.TextScaled = true
+Title_5.TextSize = 14.000
+Title_5.TextWrapped = true
+
+Title_6.Name = "Title"
+Title_6.Parent = CreditsUITitle
+Title_6.AnchorPoint = Vector2.new(0.5, 0.5)
+Title_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_6.BackgroundTransparency = 1.000
+Title_6.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Title_6.BorderSizePixel = 0
+Title_6.Position = UDim2.new(0.274198711, 0, 1.67858052, 0)
+Title_6.Size = UDim2.new(0.194990233, -20, 1.55070937, -20)
+Title_6.ZIndex = 2
+Title_6.Font = Enum.Font.GothamSemibold
+Title_6.Text = "Scripting"
+Title_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_6.TextScaled = true
+Title_6.TextSize = 14.000
+Title_6.TextWrapped = true
+
+UICorner_44.CornerRadius = UDim.new(0.075000003, 0)
+UICorner_44.Parent = Title_6
+
+Title_7.Name = "Title"
+Title_7.Parent = CreditsUITitle
+Title_7.AnchorPoint = Vector2.new(0.5, 0.5)
+Title_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_7.BackgroundTransparency = 1.000
+Title_7.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Title_7.BorderSizePixel = 0
+Title_7.Position = UDim2.new(0.123551548, 0, 2.32374239, 0)
+Title_7.Size = UDim2.new(0.238614678, -20, 1.67974174, -20)
+Title_7.ZIndex = 2
+Title_7.Font = Enum.Font.GothamSemibold
+Title_7.Text = "MostlyPurp:"
+Title_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_7.TextScaled = true
+Title_7.TextSize = 14.000
+Title_7.TextWrapped = true
+
+UICorner_45.CornerRadius = UDim.new(0.075000003, 0)
+UICorner_45.Parent = Title_7
+
+Title_8.Name = "Title"
+Title_8.Parent = CreditsUITitle
+Title_8.AnchorPoint = Vector2.new(0.5, 0.5)
+Title_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_8.BackgroundTransparency = 1.000
+Title_8.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Title_8.BorderSizePixel = 0
+Title_8.Position = UDim2.new(0.303257287, 0, 2.32374239, 0)
+Title_8.Size = UDim2.new(0.214446038, -20, 1.67974174, -20)
+Title_8.ZIndex = 2
+Title_8.Font = Enum.Font.GothamSemibold
+Title_8.Text = "Building"
+Title_8.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_8.TextScaled = true
+Title_8.TextSize = 14.000
+Title_8.TextWrapped = true
+
+UICorner_46.CornerRadius = UDim.new(0.075000003, 0)
+UICorner_46.Parent = Title_8
+
+Title_9.Name = "Title"
+Title_9.Parent = CreditsUITitle
+Title_9.AnchorPoint = Vector2.new(0.5, 0.5)
+Title_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_9.BackgroundTransparency = 1.000
+Title_9.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Title_9.BorderSizePixel = 0
+Title_9.Position = UDim2.new(0.509931803, 0, 4.85599947, 0)
+Title_9.Size = UDim2.new(1.00331259, -20, 1.38942003, -20)
+Title_9.ZIndex = 2
+Title_9.Font = Enum.Font.GothamSemibold
+Title_9.Text = "All Made By Me Only Sorry If you thought multiable people made this too but only made by me (NOT THE OWNER / CREATOR OF THE GUI SCRIPTS IN SCRIPTS MENU WITH THE GUI SCRIPTS INSIDE!!"
+Title_9.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_9.TextScaled = true
+Title_9.TextSize = 14.000
+Title_9.TextWrapped = true
+
+UICorner_47.CornerRadius = UDim.new(0.075000003, 0)
+UICorner_47.Parent = Title_9
+
+Title_10.Name = "Title"
+Title_10.Parent = CreditsUITitle
+Title_10.AnchorPoint = Vector2.new(0.5, 0.5)
+Title_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_10.BackgroundTransparency = 1.000
+Title_10.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Title_10.BorderSizePixel = 0
+Title_10.Position = UDim2.new(0.125734955, 0, 3.13019395, 0)
+Title_10.Size = UDim2.new(0.238614678, -20, 1.67974174, -20)
+Title_10.ZIndex = 2
+Title_10.Font = Enum.Font.GothamSemibold
+Title_10.Text = "MostlyPurp:"
+Title_10.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_10.TextScaled = true
+Title_10.TextSize = 14.000
+Title_10.TextWrapped = true
+
+UICorner_48.CornerRadius = UDim.new(0.075000003, 0)
+UICorner_48.Parent = Title_10
+
+Title_11.Name = "Title"
+Title_11.Parent = CreditsUITitle
+Title_11.AnchorPoint = Vector2.new(0.5, 0.5)
+Title_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_11.BackgroundTransparency = 1.000
+Title_11.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Title_11.BorderSizePixel = 0
+Title_11.Position = UDim2.new(0.305440694, 0, 3.13019395, 0)
+Title_11.Size = UDim2.new(0.214446038, -20, 1.67974174, -20)
+Title_11.ZIndex = 2
+Title_11.Font = Enum.Font.GothamSemibold
+Title_11.Text = "Epicness"
+Title_11.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_11.TextScaled = true
+Title_11.TextSize = 14.000
+Title_11.TextWrapped = true
+
+UICorner_49.CornerRadius = UDim.new(0.075000003, 0)
+UICorner_49.Parent = Title_11
+
+Title_12.Name = "Title"
+Title_12.Parent = CreditsUITitle
+Title_12.AnchorPoint = Vector2.new(0.5, 0.5)
+Title_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_12.BackgroundTransparency = 1.000
+Title_12.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Title_12.BorderSizePixel = 0
+Title_12.Position = UDim2.new(0.496913999, 0, 3.35600042, 0)
+Title_12.Size = UDim2.new(0.238614678, -20, 1.67974174, -20)
+Title_12.ZIndex = 2
+Title_12.Font = Enum.Font.GothamSemibold
+Title_12.Text = "MostlyPurp:"
+Title_12.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_12.TextScaled = true
+Title_12.TextSize = 14.000
+Title_12.TextWrapped = true
+
+UICorner_50.CornerRadius = UDim.new(0.075000003, 0)
+UICorner_50.Parent = Title_12
+
+Title_13.Name = "Title"
+Title_13.Parent = CreditsUITitle
+Title_13.AnchorPoint = Vector2.new(0.5, 0.5)
+Title_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_13.BackgroundTransparency = 1.000
+Title_13.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Title_13.BorderSizePixel = 0
+Title_13.Position = UDim2.new(0.678803146, 0, 3.32374239, 0)
+Title_13.Size = UDim2.new(0.214446038, -20, 1.67974174, -20)
+Title_13.ZIndex = 2
+Title_13.Font = Enum.Font.GothamSemibold
+Title_13.Text = "Updates:"
+Title_13.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_13.TextScaled = true
+Title_13.TextSize = 14.000
+Title_13.TextWrapped = true
+
+UICorner_51.CornerRadius = UDim.new(0.075000003, 0)
+UICorner_51.Parent = Title_13
+
+Title_14.Name = "Title"
+Title_14.Parent = CreditsUITitle
+Title_14.AnchorPoint = Vector2.new(0.5, 0.5)
+Title_14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_14.BackgroundTransparency = 1.000
+Title_14.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Title_14.BorderSizePixel = 0
+Title_14.Position = UDim2.new(0.488180369, 0, 2.32374239, 0)
+Title_14.Size = UDim2.new(0.238614678, -20, 1.67974174, -20)
+Title_14.ZIndex = 2
+Title_14.Font = Enum.Font.GothamSemibold
+Title_14.Text = "Creators Of Scripts:"
+Title_14.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_14.TextScaled = true
+Title_14.TextSize = 14.000
+Title_14.TextWrapped = true
+
+UICorner_52.CornerRadius = UDim.new(0.075000003, 0)
+UICorner_52.Parent = Title_14
+
+Title_15.Name = "Title"
+Title_15.Parent = CreditsUITitle
+Title_15.AnchorPoint = Vector2.new(0.5, 0.5)
+Title_15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_15.BackgroundTransparency = 1.000
+Title_15.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Title_15.BorderSizePixel = 0
+Title_15.Position = UDim2.new(0.486144811, 0, 1.45277405, 0)
+Title_15.Size = UDim2.new(0.216405481, -20, 1.55070937, -20)
+Title_15.ZIndex = 2
+Title_15.Font = Enum.Font.GothamSemibold
+Title_15.Text = "MostlyPurp:"
+Title_15.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_15.TextScaled = true
+Title_15.TextSize = 14.000
+Title_15.TextWrapped = true
+
+UICorner_53.CornerRadius = UDim.new(0.075000003, 0)
+UICorner_53.Parent = Title_15
+
+Title_16.Name = "Title"
+Title_16.Parent = CreditsUITitle
+Title_16.AnchorPoint = Vector2.new(0.5, 0.5)
+Title_16.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_16.BackgroundTransparency = 1.000
+Title_16.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Title_16.BorderSizePixel = 0
+Title_16.Position = UDim2.new(0.645377755, 0, 1.45277405, 0)
+Title_16.Size = UDim2.new(0.194990233, -20, 1.55070937, -20)
+Title_16.ZIndex = 2
+Title_16.Font = Enum.Font.GothamSemibold
+Title_16.Text = "MoonUI"
+Title_16.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_16.TextScaled = true
+Title_16.TextSize = 14.000
+Title_16.TextWrapped = true
+
+UICorner_54.CornerRadius = UDim.new(0.075000003, 0)
+UICorner_54.Parent = Title_16
+
+Title_17.Name = "Title"
+Title_17.Parent = CreditsUITitle
+Title_17.AnchorPoint = Vector2.new(0.5, 0.5)
+Title_17.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_17.BackgroundTransparency = 1.000
+Title_17.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Title_17.BorderSizePixel = 0
+Title_17.Position = UDim2.new(0.672252953, 0, 2.32374239, 0)
+Title_17.Size = UDim2.new(0.214446038, -20, 1.67974174, -20)
+Title_17.ZIndex = 2
+Title_17.Font = Enum.Font.GothamSemibold
+Title_17.Text = "All Credits goes to them! :D"
+Title_17.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_17.TextScaled = true
+Title_17.TextSize = 14.000
+Title_17.TextWrapped = true
+
+Title_18.Name = "Title"
+Title_18.Parent = CreditsUITitle
+Title_18.AnchorPoint = Vector2.new(0.5, 0.5)
+Title_18.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_18.BackgroundTransparency = 1.000
+Title_18.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Title_18.BorderSizePixel = 0
+Title_18.Position = UDim2.new(0.881859899, 0, 1.64632297, 0)
+Title_18.Size = UDim2.new(0.279948205, -20, 1.61522508, -20)
+Title_18.ZIndex = 2
+Title_18.Font = Enum.Font.GothamSemibold
+Title_18.Text = "Shout-Outs:"
+Title_18.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_18.TextScaled = true
+Title_18.TextSize = 14.000
+Title_18.TextWrapped = true
+
+UICorner_55.CornerRadius = UDim.new(0.075000003, 0)
+UICorner_55.Parent = Title_18
+
+Title_19.Name = "Title"
+Title_19.Parent = CreditsUITitle
+Title_19.AnchorPoint = Vector2.new(0.5, 0.5)
+Title_19.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_19.BackgroundTransparency = 1.000
+Title_19.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Title_19.BorderSizePixel = 0
+Title_19.Position = UDim2.new(0.881859899, 0, 2.38825846, 0)
+Title_19.Size = UDim2.new(0.279948205, -20, 1.61522508, -20)
+Title_19.ZIndex = 2
+Title_19.Font = Enum.Font.GothamSemibold
+Title_19.Text = "Exult Hub"
+Title_19.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_19.TextScaled = true
+Title_19.TextSize = 14.000
+Title_19.TextWrapped = true
+
+Title_20.Name = "Title"
+Title_20.Parent = CreditsUITitle
+Title_20.AnchorPoint = Vector2.new(0.5, 0.5)
+Title_20.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_20.BackgroundTransparency = 1.000
+Title_20.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Title_20.BorderSizePixel = 0
+Title_20.Position = UDim2.new(0.881859899, 0, 3.13019395, 0)
+Title_20.Size = UDim2.new(0.279948205, -20, 1.61522508, -20)
+Title_20.ZIndex = 2
+Title_20.Font = Enum.Font.GothamSemibold
+Title_20.Text = "For Him Showcasing my UI!!"
+Title_20.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_20.TextScaled = true
+Title_20.TextSize = 14.000
+Title_20.TextWrapped = true
+
+Title_21.Name = "Title"
+Title_21.Parent = CreditsUITitle
+Title_21.AnchorPoint = Vector2.new(0.5, 0.5)
+Title_21.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_21.BackgroundTransparency = 1.000
+Title_21.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Title_21.BorderSizePixel = 0
+Title_21.Position = UDim2.new(0.14823544, 0, 3.96890354, 0)
+Title_21.Size = UDim2.new(0.279948205, -20, 1.61522508, -20)
+Title_21.ZIndex = 2
+Title_21.Font = Enum.Font.GothamSemibold
+Title_21.Text = "Exult Hub:"
+Title_21.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_21.TextScaled = true
+Title_21.TextSize = 14.000
+Title_21.TextWrapped = true
+
+UICorner_56.CornerRadius = UDim.new(0.075000003, 0)
+UICorner_56.Parent = Title_21
+
+Title_22.Name = "Title"
+Title_22.Parent = CreditsUITitle
+Title_22.AnchorPoint = Vector2.new(0.5, 0.5)
+Title_22.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_22.BackgroundTransparency = 1.000
+Title_22.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Title_22.BorderSizePixel = 0
+Title_22.Position = UDim2.new(0.620942891, 0, 3.93780637, 0)
+Title_22.Size = UDim2.new(0.753747344, -20, 1.22580719, -20)
+Title_22.ZIndex = 2
+Title_22.Font = Enum.Font.GothamSemibold
+Title_22.Text = "https://www.youtube.com/channel/UCm4CtVwXeC2K_YX5z-LatFg"
+Title_22.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_22.TextScaled = true
+Title_22.TextSize = 14.000
+Title_22.TextWrapped = true
+
+UICorner_57.CornerRadius = UDim.new(0.075000003, 0)
+UICorner_57.Parent = Title_22
+
+ExecutorUIFrame.Name = "ExecutorUIFrame"
+ExecutorUIFrame.Parent = MoonFrame
+ExecutorUIFrame.AnchorPoint = Vector2.new(1, 0)
+ExecutorUIFrame.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+ExecutorUIFrame.BorderColor3 = Color3.fromRGB(27, 42, 53)
+ExecutorUIFrame.BorderSizePixel = 0
+ExecutorUIFrame.Position = UDim2.new(0, 480, 0, 44)
+ExecutorUIFrame.Size = UDim2.new(0, 469, 0, 177)
+ExecutorUIFrame.Visible = false
+
+Button1.Name = "Button1"
+Button1.Parent = ExecutorUIFrame
+Button1.AnchorPoint = Vector2.new(1, 0)
+Button1.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+Button1.BorderSizePixel = 0
+Button1.Position = UDim2.new(0.395533115, 0, 0.65763545, 0)
+Button1.Size = UDim2.new(0.383795321, 0, 0.254237294, 0)
+Button1.ZIndex = 2
+Button1.Font = Enum.Font.GothamSemibold
+Button1.Text = ""
+Button1.TextColor3 = Color3.fromRGB(255, 255, 255)
+Button1.TextScaled = true
+Button1.TextSize = 14.000
+Button1.TextWrapped = true
+
+TextLabel_37.Parent = Button1
+TextLabel_37.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_37.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_37.BackgroundTransparency = 1.000
+TextLabel_37.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_37.BorderSizePixel = 0
+TextLabel_37.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextLabel_37.Size = UDim2.new(1, -20, 1, -20)
+TextLabel_37.ZIndex = 2
+TextLabel_37.Font = Enum.Font.GothamSemibold
+TextLabel_37.Text = "Execute"
+TextLabel_37.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_37.TextScaled = true
+TextLabel_37.TextSize = 14.000
+TextLabel_37.TextWrapped = true
+
+UICorner_58.CornerRadius = UDim.new(0.075000003, 0)
+UICorner_58.Parent = Button1
+
+ExecuteBox.Name = "ExecuteBox"
+ExecuteBox.Parent = ExecutorUIFrame
+ExecuteBox.BackgroundColor3 = Color3.fromRGB(42, 42, 42)
+ExecuteBox.Position = UDim2.new(0.0120346947, 0, 0.193078503, 0)
+ExecuteBox.Size = UDim2.new(0.968017042, 0, 0.406779647, 0)
+ExecuteBox.ClearTextOnFocus = false
+ExecuteBox.Font = Enum.Font.SciFi
+ExecuteBox.MultiLine = true
+ExecuteBox.PlaceholderColor3 = Color3.fromRGB(178, 178, 178)
+ExecuteBox.PlaceholderText = "Enter Script Here! (ONLY DOES LOADSTRINGS!! AND GAME. COMMANDS!!)"
+ExecuteBox.Text = ""
+ExecuteBox.TextColor3 = Color3.fromRGB(0, 0, 0)
+ExecuteBox.TextScaled = true
+ExecuteBox.TextSize = 20.000
+ExecuteBox.TextWrapped = true
+
+UICorner_59.CornerRadius = UDim.new(0.075000003, 0)
+UICorner_59.Parent = ExecuteBox
+
+ExecutorUITitle.Name = "ExecutorUITitle"
+ExecutorUITitle.Parent = ExecutorUIFrame
+ExecutorUITitle.AnchorPoint = Vector2.new(1, 0)
+ExecutorUITitle.BackgroundColor3 = Color3.fromRGB(81, 81, 81)
+ExecutorUITitle.BorderColor3 = Color3.fromRGB(27, 42, 53)
+ExecutorUITitle.BorderSizePixel = 0
+ExecutorUITitle.Position = UDim2.new(1, 0, 0, 0)
+ExecutorUITitle.Size = UDim2.new(1, 0, 0.175141245, 0)
+
+Title_23.Name = "Title"
+Title_23.Parent = ExecutorUITitle
+Title_23.AnchorPoint = Vector2.new(0.5, 0.5)
+Title_23.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_23.BackgroundTransparency = 1.000
+Title_23.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Title_23.BorderSizePixel = 0
+Title_23.Position = UDim2.new(0.520394564, 0, 0.483870953, 0)
+Title_23.Size = UDim2.new(0.461044043, 0, 1.29032254, 0)
+Title_23.ZIndex = 2
+Title_23.Font = Enum.Font.GothamSemibold
+Title_23.Text = "Executor UI"
+Title_23.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_23.TextScaled = true
+Title_23.TextSize = 14.000
+Title_23.TextWrapped = true
+
+Button1_2.Name = "Button1"
+Button1_2.Parent = ExecutorUIFrame
+Button1_2.AnchorPoint = Vector2.new(1, 0)
+Button1_2.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+Button1_2.BorderSizePixel = 0
+Button1_2.Position = UDim2.new(0.978986859, 0, 0.65763545, 0)
+Button1_2.Size = UDim2.new(0.383795321, 0, 0.254237294, 0)
+Button1_2.ZIndex = 2
+Button1_2.Font = Enum.Font.GothamSemibold
+Button1_2.Text = ""
+Button1_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Button1_2.TextScaled = true
+Button1_2.TextSize = 14.000
+Button1_2.TextWrapped = true
+
+TextLabel_38.Parent = Button1_2
+TextLabel_38.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_38.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_38.BackgroundTransparency = 1.000
+TextLabel_38.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_38.BorderSizePixel = 0
+TextLabel_38.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextLabel_38.Size = UDim2.new(1, -20, 1, -20)
+TextLabel_38.ZIndex = 2
+TextLabel_38.Font = Enum.Font.GothamSemibold
+TextLabel_38.Text = "Clear"
+TextLabel_38.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_38.TextScaled = true
+TextLabel_38.TextSize = 14.000
+TextLabel_38.TextWrapped = true
+
+UICorner_60.CornerRadius = UDim.new(0.075000003, 0)
+UICorner_60.Parent = Button1_2
+
+HomeUIFrame.Name = "HomeUIFrame"
+HomeUIFrame.Parent = MoonFrame
+HomeUIFrame.AnchorPoint = Vector2.new(1, 0)
+HomeUIFrame.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+HomeUIFrame.BorderColor3 = Color3.fromRGB(27, 42, 53)
+HomeUIFrame.BorderSizePixel = 0
+HomeUIFrame.Position = UDim2.new(0, 480, 0, 44)
+HomeUIFrame.Size = UDim2.new(0, 469, 0, 177)
+
+HomeUITitle.Name = "HomeUITitle"
+HomeUITitle.Parent = HomeUIFrame
+HomeUITitle.AnchorPoint = Vector2.new(1, 0)
+HomeUITitle.BackgroundColor3 = Color3.fromRGB(81, 81, 81)
+HomeUITitle.BorderColor3 = Color3.fromRGB(27, 42, 53)
+HomeUITitle.BorderSizePixel = 0
+HomeUITitle.Position = UDim2.new(1, 0, 0, 0)
+HomeUITitle.Size = UDim2.new(1, 0, 0.175141245, 0)
+
+Title_24.Name = "Title"
+Title_24.Parent = HomeUITitle
+Title_24.AnchorPoint = Vector2.new(0.5, 0.5)
+Title_24.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_24.BackgroundTransparency = 1.000
+Title_24.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Title_24.BorderSizePixel = 0
+Title_24.Position = UDim2.new(0.520394564, 0, 0.483870953, 0)
+Title_24.Size = UDim2.new(0.461044043, 0, 1.29032254, 0)
+Title_24.ZIndex = 2
+Title_24.Font = Enum.Font.GothamSemibold
+Title_24.Text = "Home UI"
+Title_24.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_24.TextScaled = true
+Title_24.TextSize = 14.000
+Title_24.TextWrapped = true
+
+UICorner_61.CornerRadius = UDim.new(0.075000003, 0)
+UICorner_61.Parent = HomeUITitle
+
+DescriptionPlayerText.Name = "DescriptionPlayerText"
+DescriptionPlayerText.Parent = HomeUIFrame
+DescriptionPlayerText.AnchorPoint = Vector2.new(0.5, 0.5)
+DescriptionPlayerText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DescriptionPlayerText.BackgroundTransparency = 1.000
+DescriptionPlayerText.BorderColor3 = Color3.fromRGB(27, 42, 53)
+DescriptionPlayerText.BorderSizePixel = 0
+DescriptionPlayerText.Position = UDim2.new(0.519328475, 0, 0.757882178, 0)
+DescriptionPlayerText.Size = UDim2.new(0.646545172, 0, 0.188627601, 0)
+DescriptionPlayerText.ZIndex = 2
+DescriptionPlayerText.Font = Enum.Font.GothamSemibold
+DescriptionPlayerText.Text = "Welcome Player!! Thank You For Using MoonUI!! :D"
+DescriptionPlayerText.TextColor3 = Color3.fromRGB(255, 255, 255)
+DescriptionPlayerText.TextScaled = true
+DescriptionPlayerText.TextSize = 14.000
+DescriptionPlayerText.TextWrapped = true
+
+UICorner_62.CornerRadius = UDim.new(0.075000003, 0)
+UICorner_62.Parent = DescriptionPlayerText
+
+PlayerImage.Name = "PlayerImage"
+PlayerImage.Parent = HomeUIFrame
+PlayerImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PlayerImage.BackgroundTransparency = 1.000
+PlayerImage.Position = UDim2.new(0.411513865, 0, 0.197740108, 0)
+PlayerImage.Size = UDim2.new(0, 90, 0, 82)
+PlayerImage.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+
+UICorner_63.CornerRadius = UDim.new(0.5, 0)
+UICorner_63.Parent = PlayerImage
+
+SSUIFrame.Name = "SSUIFrame"
+SSUIFrame.Parent = MoonFrame
+SSUIFrame.AnchorPoint = Vector2.new(1, 0)
+SSUIFrame.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+SSUIFrame.BorderColor3 = Color3.fromRGB(27, 42, 53)
+SSUIFrame.BorderSizePixel = 0
+SSUIFrame.Position = UDim2.new(0, 480, 0, 44)
+SSUIFrame.Size = UDim2.new(0, 469, 0, 177)
+SSUIFrame.Visible = false
+
+SSUITitle.Name = "SSUITitle"
+SSUITitle.Parent = SSUIFrame
+SSUITitle.AnchorPoint = Vector2.new(1, 0)
+SSUITitle.BackgroundColor3 = Color3.fromRGB(81, 81, 81)
+SSUITitle.BorderColor3 = Color3.fromRGB(27, 42, 53)
+SSUITitle.BorderSizePixel = 0
+SSUITitle.Position = UDim2.new(1, 0, 0, 0)
+SSUITitle.Size = UDim2.new(1, 0, 0.175141245, 0)
+
+Title_25.Name = "Title"
+Title_25.Parent = SSUITitle
+Title_25.AnchorPoint = Vector2.new(0.5, 0.5)
+Title_25.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_25.BackgroundTransparency = 1.000
+Title_25.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Title_25.BorderSizePixel = 0
+Title_25.Position = UDim2.new(0.521460712, 0, 0.564516127, 0)
+Title_25.Size = UDim2.new(0.46317628, 0, 1.12903225, 0)
+Title_25.ZIndex = 2
+Title_25.Font = Enum.Font.GothamSemibold
+Title_25.Text = "Server Side Executor"
+Title_25.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_25.TextScaled = true
+Title_25.TextSize = 14.000
+Title_25.TextWrapped = true
+
+Button1Main.Name = "Button1Main"
+Button1Main.Parent = SSUIFrame
+Button1Main.AnchorPoint = Vector2.new(1, 0)
+Button1Main.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+Button1Main.BorderSizePixel = 0
+Button1Main.Position = UDim2.new(0.395533115, 0, 0.65763545, 0)
+Button1Main.Size = UDim2.new(0.383795321, 0, 0.254237294, 0)
+Button1Main.ZIndex = 2
+Button1Main.Font = Enum.Font.GothamSemibold
+Button1Main.Text = ""
+Button1Main.TextColor3 = Color3.fromRGB(255, 255, 255)
+Button1Main.TextScaled = true
+Button1Main.TextSize = 14.000
+Button1Main.TextWrapped = true
+
+TextLabel_39.Parent = Button1Main
+TextLabel_39.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_39.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_39.BackgroundTransparency = 1.000
+TextLabel_39.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_39.BorderSizePixel = 0
+TextLabel_39.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextLabel_39.Size = UDim2.new(1, -20, 1, -20)
+TextLabel_39.ZIndex = 2
+TextLabel_39.Font = Enum.Font.GothamSemibold
+TextLabel_39.Text = "Execute"
+TextLabel_39.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_39.TextScaled = true
+TextLabel_39.TextSize = 14.000
+TextLabel_39.TextWrapped = true
+
+ExecuteBox_2.Name = "ExecuteBox"
+ExecuteBox_2.Parent = SSUIFrame
+ExecuteBox_2.BackgroundColor3 = Color3.fromRGB(42, 42, 42)
+ExecuteBox_2.Position = UDim2.new(0.0120346947, 0, 0.193078503, 0)
+ExecuteBox_2.Size = UDim2.new(0.968017042, 0, 0.406779647, 0)
+ExecuteBox_2.ClearTextOnFocus = false
+ExecuteBox_2.Font = Enum.Font.SciFi
+ExecuteBox_2.MultiLine = true
+ExecuteBox_2.PlaceholderColor3 = Color3.fromRGB(178, 178, 178)
+ExecuteBox_2.PlaceholderText = "Enter Script Here! (ONLY DOES REQUIRES!!)"
+ExecuteBox_2.Text = ""
+ExecuteBox_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+ExecuteBox_2.TextScaled = true
+ExecuteBox_2.TextSize = 20.000
+ExecuteBox_2.TextWrapped = true
+
+Button1_3.Name = "Button1"
+Button1_3.Parent = SSUIFrame
+Button1_3.AnchorPoint = Vector2.new(1, 0)
+Button1_3.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+Button1_3.BorderSizePixel = 0
+Button1_3.Position = UDim2.new(0.978986859, 0, 0.65763545, 0)
+Button1_3.Size = UDim2.new(0.383795321, 0, 0.254237294, 0)
+Button1_3.ZIndex = 2
+Button1_3.Font = Enum.Font.GothamSemibold
+Button1_3.Text = ""
+Button1_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Button1_3.TextScaled = true
+Button1_3.TextSize = 14.000
+Button1_3.TextWrapped = true
+
+TextLabel_40.Parent = Button1_3
+TextLabel_40.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_40.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_40.BackgroundTransparency = 1.000
+TextLabel_40.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_40.BorderSizePixel = 0
+TextLabel_40.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextLabel_40.Size = UDim2.new(1, -20, 1, -20)
+TextLabel_40.ZIndex = 2
+TextLabel_40.Font = Enum.Font.GothamSemibold
+TextLabel_40.Text = "Clear"
+TextLabel_40.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_40.TextScaled = true
+TextLabel_40.TextSize = 14.000
+TextLabel_40.TextWrapped = true
+
+-- Module Scripts:
+
+local fake_module_scripts = {}
+
+do -- nil.Loadstring
+	local script = Instance.new('ModuleScript', nil)
+	script.Name = "Loadstring"
+	local function module_script()
+		--[[
+				vLua 5.1 - Lua written in Lua Virtual Machine
+				---------------
+				vLua is a virtual machine and compiler for dynamically compiling and executing Lua.
+				It'll work on both client and server, regardless of LoadStringEnabled. This module is
+				designed to be a drop in replacement for loadstring, meaning you can do the following:
+				
+				Example:
+					local loadstring = require(workspace.Loadstring)
+					local executable, compileFailReason = loadstring("print('hello from vLua!')")
+					executable()
+				
+				Please note, vLua IS SLOWER COMPARED TO vanilla Lua, although Luau does improve performance.
+				Do not attemptp to run performance intensive tasks without testing first, otherwise you
+				may have a bad time.
+				
+				Interested in improving yourself as a programmer? Consider joining Bleu Pigs - Scripters, a community
+				focused on self improving and showing off creations. Visit the link below to learn more
+				https://devforum.roblox.com/u/bleupigs
+				
+				Changelog:
+					[3222021]
+						- fixed module erroring due to missing script variable
+						- removed types until TypedLua is more stable/adopted
+						- added an how to use example
+				
+					[372021]
+						- updated  FiOne to latest release
+						- migrated Yeuliang to improved version from Moonshine
+				
+				Credits:
+					- FiOne LBI (created by same author as Rerubi) - https://github.com/Rerumu/FiOne
+					- Yueliang 5 (Lua compiler in Lua) - http://yueliang.luaforge.net/
+					- Moonshine (improved version of Yeuliang) - https://github.com/gamesys/moonshine
+		]]
+		local compile = require(script:WaitForChild("Yueliang"))
+		local createExecutable = require(script:WaitForChild("FiOne"))
+		getfenv().script = nil
+		
+		return function(source, env)
+			local executable
+			local env = env or getfenv(2)
+			local name = (env.script and env.script:GetFullName())
+			local ran, failureReason = pcall(function()
+				local compiledBytecode = compile(source, name)
+				executable = createExecutable(compiledBytecode)
+			end)
+			
+			if ran then
+				return executable
+			end
+			return nil, failureReason
+		end
+	end
+	fake_module_scripts[script] = module_script
+end
+do -- nil.FiOne
+	local script = Instance.new('ModuleScript', nil)
+	script.Name = "FiOne"
+	local function module_script()
+		local bit = bit or bit32 or require('bit')
+		local unpack = table.unpack or unpack
+		
+		local stm_lua_bytecode
+		local wrap_lua_func
+		local stm_lua_func
+		
+		-- SETLIST config
+		local FIELDS_PER_FLUSH = 50
+		
+		-- opcode types for getting values
+		local opcode_t = {
+			[0] = 'ABC',
+			'ABx',
+			'ABC',
+			'ABC',
+			'ABC',
+			'ABx',
+			'ABC',
+			'ABx',
+			'ABC',
+			'ABC',
+			'ABC',
+			'ABC',
+			'ABC',
+			'ABC',
+			'ABC',
+			'ABC',
+			'ABC',
+			'ABC',
+			'ABC',
+			'ABC',
+			'ABC',
+			'ABC',
+			'AsBx',
+			'ABC',
+			'ABC',
+			'ABC',
+			'ABC',
+			'ABC',
+			'ABC',
+			'ABC',
+			'ABC',
+			'AsBx',
+			'AsBx',
+			'ABC',
+			'ABC',
+			'ABC',
+			'ABx',
+			'ABC',
+		}
+		
+		local opcode_m = {
+			[0] = {b = 'OpArgR', c = 'OpArgN'},
+			{b = 'OpArgK', c = 'OpArgN'},
+			{b = 'OpArgU', c = 'OpArgU'},
+			{b = 'OpArgR', c = 'OpArgN'},
+			{b = 'OpArgU', c = 'OpArgN'},
+			{b = 'OpArgK', c = 'OpArgN'},
+			{b = 'OpArgR', c = 'OpArgK'},
+			{b = 'OpArgK', c = 'OpArgN'},
+			{b = 'OpArgU', c = 'OpArgN'},
+			{b = 'OpArgK', c = 'OpArgK'},
+			{b = 'OpArgU', c = 'OpArgU'},
+			{b = 'OpArgR', c = 'OpArgK'},
+			{b = 'OpArgK', c = 'OpArgK'},
+			{b = 'OpArgK', c = 'OpArgK'},
+			{b = 'OpArgK', c = 'OpArgK'},
+			{b = 'OpArgK', c = 'OpArgK'},
+			{b = 'OpArgK', c = 'OpArgK'},
+			{b = 'OpArgK', c = 'OpArgK'},
+			{b = 'OpArgR', c = 'OpArgN'},
+			{b = 'OpArgR', c = 'OpArgN'},
+			{b = 'OpArgR', c = 'OpArgN'},
+			{b = 'OpArgR', c = 'OpArgR'},
+			{b = 'OpArgR', c = 'OpArgN'},
+			{b = 'OpArgK', c = 'OpArgK'},
+			{b = 'OpArgK', c = 'OpArgK'},
+			{b = 'OpArgK', c = 'OpArgK'},
+			{b = 'OpArgR', c = 'OpArgU'},
+			{b = 'OpArgR', c = 'OpArgU'},
+			{b = 'OpArgU', c = 'OpArgU'},
+			{b = 'OpArgU', c = 'OpArgU'},
+			{b = 'OpArgU', c = 'OpArgN'},
+			{b = 'OpArgR', c = 'OpArgN'},
+			{b = 'OpArgR', c = 'OpArgN'},
+			{b = 'OpArgN', c = 'OpArgU'},
+			{b = 'OpArgU', c = 'OpArgU'},
+			{b = 'OpArgN', c = 'OpArgN'},
+			{b = 'OpArgU', c = 'OpArgN'},
+			{b = 'OpArgU', c = 'OpArgN'},
+		}
+		
+		-- int rd_int_basic(string src, int s, int e, int d)
+		-- @src - Source binary string
+		-- @s - Start index of a little endian integer
+		-- @e - End index of the integer
+		-- @d - Direction of the loop
+		local function rd_int_basic(src, s, e, d)
+			local num = 0
+		
+			-- if bb[l] > 127 then -- signed negative
+			-- 	num = num - 256 ^ l
+			-- 	bb[l] = bb[l] - 128
+			-- end
+		
+			for i = s, e, d do num = num + string.byte(src, i, i) * 256 ^ (i - s) end
+		
+			return num
+		end
+		
+		-- float rd_flt_basic(byte f1..8)
+		-- @f1..4 - The 4 bytes composing a little endian float
+		local function rd_flt_basic(f1, f2, f3, f4)
+			local sign = (-1) ^ bit.rshift(f4, 7)
+			local exp = bit.rshift(f3, 7) + bit.lshift(bit.band(f4, 0x7F), 1)
+			local frac = f1 + bit.lshift(f2, 8) + bit.lshift(bit.band(f3, 0x7F), 16)
+			local normal = 1
+		
+			if exp == 0 then
+				if frac == 0 then
+					return sign * 0
+				else
+					normal = 0
+					exp = 1
+				end
+			elseif exp == 0x7F then
+				if frac == 0 then
+					return sign * (1 / 0)
+				else
+					return sign * (0 / 0)
+				end
+			end
+		
+			return sign * 2 ^ (exp - 127) * (1 + normal / 2 ^ 23)
+		end
+		
+		-- double rd_dbl_basic(byte f1..8)
+		-- @f1..8 - The 8 bytes composing a little endian double
+		local function rd_dbl_basic(f1, f2, f3, f4, f5, f6, f7, f8)
+			local sign = (-1) ^ bit.rshift(f8, 7)
+			local exp = bit.lshift(bit.band(f8, 0x7F), 4) + bit.rshift(f7, 4)
+			local frac = bit.band(f7, 0x0F) * 2 ^ 48
+			local normal = 1
+		
+			frac = frac + (f6 * 2 ^ 40) + (f5 * 2 ^ 32) + (f4 * 2 ^ 24) + (f3 * 2 ^ 16) + (f2 * 2 ^ 8) + f1 -- help
+		
+			if exp == 0 then
+				if frac == 0 then
+					return sign * 0
+				else
+					normal = 0
+					exp = 1
+				end
+			elseif exp == 0x7FF then
+				if frac == 0 then
+					return sign * (1 / 0)
+				else
+					return sign * (0 / 0)
+				end
+			end
+		
+			return sign * 2 ^ (exp - 1023) * (normal + frac / 2 ^ 52)
+		end
+		
+		-- int rd_int_le(string src, int s, int e)
+		-- @src - Source binary string
+		-- @s - Start index of a little endian integer
+		-- @e - End index of the integer
+		local function rd_int_le(src, s, e) return rd_int_basic(src, s, e - 1, 1) end
+		
+		-- int rd_int_be(string src, int s, int e)
+		-- @src - Source binary string
+		-- @s - Start index of a big endian integer
+		-- @e - End index of the integer
+		local function rd_int_be(src, s, e) return rd_int_basic(src, e - 1, s, -1) end
+		
+		-- float rd_flt_le(string src, int s)
+		-- @src - Source binary string
+		-- @s - Start index of little endian float
+		local function rd_flt_le(src, s) return rd_flt_basic(string.byte(src, s, s + 3)) end
+		
+		-- float rd_flt_be(string src, int s)
+		-- @src - Source binary string
+		-- @s - Start index of big endian float
+		local function rd_flt_be(src, s)
+			local f1, f2, f3, f4 = string.byte(src, s, s + 3)
+			return rd_flt_basic(f4, f3, f2, f1)
+		end
+		
+		-- double rd_dbl_le(string src, int s)
+		-- @src - Source binary string
+		-- @s - Start index of little endian double
+		local function rd_dbl_le(src, s) return rd_dbl_basic(string.byte(src, s, s + 7)) end
+		
+		-- double rd_dbl_be(string src, int s)
+		-- @src - Source binary string
+		-- @s - Start index of big endian double
+		local function rd_dbl_be(src, s)
+			local f1, f2, f3, f4, f5, f6, f7, f8 = string.byte(src, s, s + 7) -- same
+			return rd_dbl_basic(f8, f7, f6, f5, f4, f3, f2, f1)
+		end
+		
+		-- to avoid nested ifs in deserializing
+		local float_types = {
+			[4] = {little = rd_flt_le, big = rd_flt_be},
+			[8] = {little = rd_dbl_le, big = rd_dbl_be},
+		}
+		
+		-- byte stm_byte(Stream S)
+		-- @S - Stream object to read from
+		local function stm_byte(S)
+			local idx = S.index
+			local bt = string.byte(S.source, idx, idx)
+		
+			S.index = idx + 1
+			return bt
+		end
+		
+		-- string stm_string(Stream S, int len)
+		-- @S - Stream object to read from
+		-- @len - Length of string being read
+		local function stm_string(S, len)
+			local pos = S.index + len
+			local str = string.sub(S.source, S.index, pos - 1)
+		
+			S.index = pos
+			return str
+		end
+		
+		-- string stm_lstring(Stream S)
+		-- @S - Stream object to read from
+		local function stm_lstring(S)
+			local len = S:s_szt()
+			local str
+		
+			if len ~= 0 then str = string.sub(stm_string(S, len), 1, -2) end
+		
+			return str
+		end
+		
+		-- fn cst_int_rdr(string src, int len, fn func)
+		-- @len - Length of type for reader
+		-- @func - Reader callback
+		local function cst_int_rdr(len, func)
+			return function(S)
+				local pos = S.index + len
+				local int = func(S.source, S.index, pos)
+				S.index = pos
+		
+				return int
+			end
+		end
+		
+		-- fn cst_flt_rdr(string src, int len, fn func)
+		-- @len - Length of type for reader
+		-- @func - Reader callback
+		local function cst_flt_rdr(len, func)
+			return function(S)
+				local flt = func(S.source, S.index)
+				S.index = S.index + len
+		
+				return flt
+			end
+		end
+		
+		local function stm_instructions(S)
+			local size = S:s_int()
+			local code = {}
+		
+			for i = 1, size do
+				local ins = S:s_ins()
+				local op = bit.band(ins, 0x3F)
+				local args = opcode_t[op]
+				local mode = opcode_m[op]
+				local data = {value = ins, op = op, A = bit.band(bit.rshift(ins, 6), 0xFF)}
+		
+				if args == 'ABC' then
+					data.B = bit.band(bit.rshift(ins, 23), 0x1FF)
+					data.C = bit.band(bit.rshift(ins, 14), 0x1FF)
+					data.is_KB = mode.b == 'OpArgK' and data.B > 0xFF -- post process optimization
+					data.is_KC = mode.c == 'OpArgK' and data.C > 0xFF
+				elseif args == 'ABx' then
+					data.Bx = bit.band(bit.rshift(ins, 14), 0x3FFFF)
+					data.is_K = mode.b == 'OpArgK'
+				elseif args == 'AsBx' then
+					data.sBx = bit.band(bit.rshift(ins, 14), 0x3FFFF) - 131071
+				end
+		
+				code[i] = data
+			end
+		
+			return code
+		end
+		
+		local function stm_constants(S)
+			local size = S:s_int()
+			local consts = {}
+		
+			for i = 1, size do
+				local tt = stm_byte(S)
+				local k
+		
+				if tt == 1 then
+					k = stm_byte(S) ~= 0
+				elseif tt == 3 then
+					k = S:s_num()
+				elseif tt == 4 then
+					k = stm_lstring(S)
+				end
+		
+				consts[i] = k -- offset +1 during instruction decode
+			end
+		
+			return consts
+		end
+		
+		local function stm_subfuncs(S, src)
+			local size = S:s_int()
+			local sub = {}
+		
+			for i = 1, size do
+				sub[i] = stm_lua_func(S, src) -- offset +1 in CLOSURE
+			end
+		
+			return sub
+		end
+		
+		local function stm_lineinfo(S)
+			local size = S:s_int()
+			local lines = {}
+		
+			for i = 1, size do lines[i] = S:s_int() end
+		
+			return lines
+		end
+		
+		local function stm_locvars(S)
+			local size = S:s_int()
+			local locvars = {}
+		
+			for i = 1, size do locvars[i] = {varname = stm_lstring(S), startpc = S:s_int(), endpc = S:s_int()} end
+		
+			return locvars
+		end
+		
+		local function stm_upvals(S)
+			local size = S:s_int()
+			local upvals = {}
+		
+			for i = 1, size do upvals[i] = stm_lstring(S) end
+		
+			return upvals
+		end
+		
+		function stm_lua_func(S, psrc)
+			local proto = {}
+			local src = stm_lstring(S) or psrc -- source is propagated
+		
+			proto.source = src -- source name
+		
+			S:s_int() -- line defined
+			S:s_int() -- last line defined
+		
+			proto.numupvals = stm_byte(S) -- num upvalues
+			proto.numparams = stm_byte(S) -- num params
+		
+			stm_byte(S) -- vararg flag
+			stm_byte(S) -- max stack size
+		
+			proto.code = stm_instructions(S)
+			proto.const = stm_constants(S)
+			proto.subs = stm_subfuncs(S, src)
+			proto.lines = stm_lineinfo(S)
+		
+			stm_locvars(S)
+			stm_upvals(S)
+		
+			-- post process optimization
+			for _, v in ipairs(proto.code) do
+				if v.is_K then
+					v.const = proto.const[v.Bx + 1] -- offset for 1 based index
+				else
+					if v.is_KB then v.const_B = proto.const[v.B - 0xFF] end
+		
+					if v.is_KC then v.const_C = proto.const[v.C - 0xFF] end
+				end
+			end
+		
+			return proto
+		end
+		
+		function stm_lua_bytecode(src)
+			-- func reader
+			local rdr_func
+		
+			-- header flags
+			local little
+			local size_int
+			local size_szt
+			local size_ins
+			local size_num
+			local flag_int
+		
+			-- stream object
+			local stream = {
+				-- data
+				index = 1,
+				source = src,
+			}
+		
+			assert(stm_string(stream, 4) == '\27Lua', 'invalid Lua signature')
+			assert(stm_byte(stream) == 0x51, 'invalid Lua version')
+			assert(stm_byte(stream) == 0, 'invalid Lua format')
+		
+			little = stm_byte(stream) ~= 0
+			size_int = stm_byte(stream)
+			size_szt = stm_byte(stream)
+			size_ins = stm_byte(stream)
+			size_num = stm_byte(stream)
+			flag_int = stm_byte(stream) ~= 0
+		
+			rdr_func = little and rd_int_le or rd_int_be
+			stream.s_int = cst_int_rdr(size_int, rdr_func)
+			stream.s_szt = cst_int_rdr(size_szt, rdr_func)
+			stream.s_ins = cst_int_rdr(size_ins, rdr_func)
+		
+			if flag_int then
+				stream.s_num = cst_int_rdr(size_num, rdr_func)
+			elseif float_types[size_num] then
+				stream.s_num = cst_flt_rdr(size_num, float_types[size_num][little and 'little' or 'big'])
+			else
+				error('unsupported float size')
+			end
+		
+			return stm_lua_func(stream, '@virtual')
+		end
+		
+		local function close_lua_upvalues(list, index)
+			for i, uv in pairs(list) do
+				if uv.index >= index then
+					uv.value = uv.store[uv.index] -- store value
+					uv.store = uv
+					uv.index = 'value' -- self reference
+					list[i] = nil
+				end
+			end
+		end
+		
+		local function open_lua_upvalue(list, index, stack)
+			local prev = list[index]
+		
+			if not prev then
+				prev = {index = index, store = stack}
+				list[index] = prev
+			end
+		
+			return prev
+		end
+		
+		local function wrap_lua_variadic(...) return select('#', ...), {...} end
+		
+		local function on_lua_error(exst, err)
+			local src = exst.source
+			local line = exst.lines[exst.pc - 1]
+			local psrc, pline, pmsg = string.match(err, '^(.-):(%d+):%s+(.+)')
+			local fmt = '%s:%i: [%s:%i] %s'
+		
+			line = line or '0'
+			psrc = psrc or '?'
+			pline = pline or '0'
+			pmsg = pmsg or err
+		
+			error(string.format(fmt, src, line, psrc, pline, pmsg), 0)
+		end
+		
+		local function exec_lua_func(exst)
+			-- localize for easy lookup
+			local code = exst.code
+			local subs = exst.subs
+			local env = exst.env
+			local upvs = exst.upvals
+			local vargs = exst.varargs
+		
+			-- state variables
+			local stktop = -1
+			local openupvs = {}
+			local stack = exst.stack
+			local pc = exst.pc
+		
+			while true do
+				local inst = code[pc]
+				local op = inst.op
+				pc = pc + 1
+		
+				if op < 19 then
+					if op < 9 then
+						if op < 4 then
+							if op < 2 then
+								if op < 1 then
+									--[[0 MOVE]]
+									stack[inst.A] = stack[inst.B]
+								else
+									--[[1 LOADK]]
+									stack[inst.A] = inst.const
+								end
+							elseif op > 2 then
+								--[[3 LOADNIL]]
+								for i = inst.A, inst.B do stack[i] = nil end
+							else
+								--[[2 LOADBOOL]]
+								stack[inst.A] = inst.B ~= 0
+		
+								if inst.C ~= 0 then pc = pc + 1 end
+							end
+						elseif op > 4 then
+							if op < 7 then
+								if op < 6 then
+									--[[5 GETGLOBAL]]
+									stack[inst.A] = env[inst.const]
+								else
+									--[[6 GETTABLE]]
+									local index
+		
+									if inst.is_KC then
+										index = inst.const_C
+									else
+										index = stack[inst.C]
+									end
+		
+									stack[inst.A] = stack[inst.B][index]
+								end
+							elseif op > 7 then
+								--[[8 SETUPVAL]]
+								local uv = upvs[inst.B]
+		
+								uv.store[uv.index] = stack[inst.A]
+							else
+								--[[7 SETGLOBAL]]
+								env[inst.const] = stack[inst.A]
+							end
+						else
+							--[[4 GETUPVAL]]
+							local uv = upvs[inst.B]
+		
+							stack[inst.A] = uv.store[uv.index]
+						end
+					elseif op > 9 then
+						if op < 14 then
+							if op < 12 then
+								if op < 11 then
+									--[[10 NEWTABLE]]
+									stack[inst.A] = {}
+								else
+									--[[11 SELF]]
+									local A = inst.A
+									local B = inst.B
+									local index
+		
+									if inst.is_KC then
+										index = inst.const_C
+									else
+										index = stack[inst.C]
+									end
+		
+									stack[A + 1] = stack[B]
+									stack[A] = stack[B][index]
+								end
+							elseif op > 12 then
+								--[[13 SUB]]
+								local lhs, rhs
+		
+								if inst.is_KB then
+									lhs = inst.const_B
+								else
+									lhs = stack[inst.B]
+								end
+		
+								if inst.is_KC then
+									rhs = inst.const_C
+								else
+									rhs = stack[inst.C]
+								end
+		
+								stack[inst.A] = lhs - rhs
+							else
+								--[[12 ADD]]
+								local lhs, rhs
+		
+								if inst.is_KB then
+									lhs = inst.const_B
+								else
+									lhs = stack[inst.B]
+								end
+		
+								if inst.is_KC then
+									rhs = inst.const_C
+								else
+									rhs = stack[inst.C]
+								end
+		
+								stack[inst.A] = lhs + rhs
+							end
+						elseif op > 14 then
+							if op < 17 then
+								if op < 16 then
+									--[[15 DIV]]
+									local lhs, rhs
+		
+									if inst.is_KB then
+										lhs = inst.const_B
+									else
+										lhs = stack[inst.B]
+									end
+		
+									if inst.is_KC then
+										rhs = inst.const_C
+									else
+										rhs = stack[inst.C]
+									end
+		
+									stack[inst.A] = lhs / rhs
+								else
+									--[[16 MOD]]
+									local lhs, rhs
+		
+									if inst.is_KB then
+										lhs = inst.const_B
+									else
+										lhs = stack[inst.B]
+									end
+		
+									if inst.is_KC then
+										rhs = inst.const_C
+									else
+										rhs = stack[inst.C]
+									end
+		
+									stack[inst.A] = lhs % rhs
+								end
+							elseif op > 17 then
+								--[[18 UNM]]
+								stack[inst.A] = -stack[inst.B]
+							else
+								--[[17 POW]]
+								local lhs, rhs
+		
+								if inst.is_KB then
+									lhs = inst.const_B
+								else
+									lhs = stack[inst.B]
+								end
+		
+								if inst.is_KC then
+									rhs = inst.const_C
+								else
+									rhs = stack[inst.C]
+								end
+		
+								stack[inst.A] = lhs ^ rhs
+							end
+						else
+							--[[14 MUL]]
+							local lhs, rhs
+		
+							if inst.is_KB then
+								lhs = inst.const_B
+							else
+								lhs = stack[inst.B]
+							end
+		
+							if inst.is_KC then
+								rhs = inst.const_C
+							else
+								rhs = stack[inst.C]
+							end
+		
+							stack[inst.A] = lhs * rhs
+						end
+					else
+						--[[9 SETTABLE]]
+						local index, value
+		
+						if inst.is_KB then
+							index = inst.const_B
+						else
+							index = stack[inst.B]
+						end
+		
+						if inst.is_KC then
+							value = inst.const_C
+						else
+							value = stack[inst.C]
+						end
+		
+						stack[inst.A][index] = value
+					end
+				elseif op > 19 then
+					if op < 29 then
+						if op < 24 then
+							if op < 22 then
+								if op < 21 then
+									--[[20 LEN]]
+									stack[inst.A] = #stack[inst.B]
+								else
+									--[[21 CONCAT]]
+									local str = stack[inst.B]
+		
+									for i = inst.B + 1, inst.C do str = str .. stack[i] end
+		
+									stack[inst.A] = str
+								end
+							elseif op > 22 then
+								--[[23 EQ]]
+								local lhs, rhs
+		
+								if inst.is_KB then
+									lhs = inst.const_B
+								else
+									lhs = stack[inst.B]
+								end
+		
+								if inst.is_KC then
+									rhs = inst.const_C
+								else
+									rhs = stack[inst.C]
+								end
+		
+								if (lhs == rhs) ~= (inst.A ~= 0) then pc = pc + 1 end
+							else
+								--[[22 JMP]]
+								pc = pc + inst.sBx
+							end
+						elseif op > 24 then
+							if op < 27 then
+								if op < 26 then
+									--[[25 LE]]
+									local lhs, rhs
+		
+									if inst.is_KB then
+										lhs = inst.const_B
+									else
+										lhs = stack[inst.B]
+									end
+		
+									if inst.is_KC then
+										rhs = inst.const_C
+									else
+										rhs = stack[inst.C]
+									end
+		
+									if (lhs <= rhs) ~= (inst.A ~= 0) then pc = pc + 1 end
+								else
+									--[[26 TEST]]
+									if (not stack[inst.A]) == (inst.C ~= 0) then pc = pc + 1 end
+								end
+							elseif op > 27 then
+								--[[28 CALL]]
+								local A = inst.A
+								local B = inst.B
+								local C = inst.C
+								local params
+								local sz_vals, l_vals
+		
+								if B == 0 then
+									params = stktop - A
+								else
+									params = B - 1
+								end
+		
+								sz_vals, l_vals = wrap_lua_variadic(stack[A](unpack(stack, A + 1, A + params)))
+		
+								if C == 0 then
+									stktop = A + sz_vals - 1
+								else
+									sz_vals = C - 1
+								end
+		
+								for i = 1, sz_vals do stack[A + i - 1] = l_vals[i] end
+							else
+								--[[27 TESTSET]]
+								local A = inst.A
+								local B = inst.B
+		
+								if (not stack[B]) == (inst.C ~= 0) then
+									pc = pc + 1
+								else
+									stack[A] = stack[B]
+								end
+							end
+						else
+							--[[24 LT]]
+							local lhs, rhs
+		
+							if inst.is_KB then
+								lhs = inst.const_B
+							else
+								lhs = stack[inst.B]
+							end
+		
+							if inst.is_KC then
+								rhs = inst.const_C
+							else
+								rhs = stack[inst.C]
+							end
+		
+							if (lhs < rhs) ~= (inst.A ~= 0) then pc = pc + 1 end
+						end
+					elseif op > 29 then
+						if op < 34 then
+							if op < 32 then
+								if op < 31 then
+									--[[30 RETURN]]
+									local A = inst.A
+									local B = inst.B
+									local vals = {}
+									local size
+		
+									if B == 0 then
+										size = stktop - A + 1
+									else
+										size = B - 1
+									end
+		
+									for i = 1, size do vals[i] = stack[A + i - 1] end
+		
+									close_lua_upvalues(openupvs, 0)
+									return size, vals
+								else
+									--[[31 FORLOOP]]
+									local A = inst.A
+									local step = stack[A + 2]
+									local index = stack[A] + step
+									local limit = stack[A + 1]
+									local loops
+		
+									if step == math.abs(step) then
+										loops = index <= limit
+									else
+										loops = index >= limit
+									end
+		
+									if loops then
+										stack[inst.A] = index
+										stack[inst.A + 3] = index
+										pc = pc + inst.sBx
+									end
+								end
+							elseif op > 32 then
+								--[[33 TFORLOOP]]
+								local A = inst.A
+								local func = stack[A]
+								local state = stack[A + 1]
+								local index = stack[A + 2]
+								local base = A + 3
+								local vals
+		
+								stack[base + 2] = index
+								stack[base + 1] = state
+								stack[base] = func
+		
+								vals = {func(state, index)}
+		
+								for i = 1, inst.C do stack[base + i - 1] = vals[i] end
+		
+								if stack[base] ~= nil then
+									stack[A + 2] = stack[base]
+								else
+									pc = pc + 1
+								end
+							else
+								--[[32 FORPREP]]
+								local A = inst.A
+								local init, limit, step
+		
+								init = assert(tonumber(stack[A]), '`for` initial value must be a number')
+								limit = assert(tonumber(stack[A + 1]), '`for` limit must be a number')
+								step = assert(tonumber(stack[A + 2]), '`for` step must be a number')
+		
+								stack[A] = init - step
+								stack[A + 1] = limit
+								stack[A + 2] = step
+		
+								pc = pc + inst.sBx
+							end
+						elseif op > 34 then
+							if op < 36 then
+								--[[35 CLOSE]]
+								close_lua_upvalues(openupvs, inst.A)
+							elseif op > 36 then
+								--[[37 VARARG]]
+								local A = inst.A
+								local size = inst.B
+		
+								if size == 0 then
+									size = vargs.size
+									stktop = A + size - 1
+								end
+		
+								for i = 1, size do stack[A + i - 1] = vargs.list[i] end
+							else
+								--[[36 CLOSURE]]
+								local sub = subs[inst.Bx + 1] -- offset for 1 based index
+								local nups = sub.numupvals
+								local uvlist
+		
+								if nups ~= 0 then
+									uvlist = {}
+		
+									for i = 1, nups do
+										local pseudo = code[pc + i - 1]
+		
+										if pseudo.op == 0 then -- @MOVE
+											uvlist[i - 1] = open_lua_upvalue(openupvs, pseudo.B, stack)
+										elseif pseudo.op == 4 then -- @GETUPVAL
+											uvlist[i - 1] = upvs[pseudo.B]
+										end
+									end
+		
+									pc = pc + nups
+								end
+		
+								stack[inst.A] = wrap_lua_func(sub, env, uvlist)
+							end
+						else
+							--[[34 SETLIST]]
+							local A = inst.A
+							local C = inst.C
+							local size = inst.B
+							local tab = stack[A]
+							local offset
+		
+							if size == 0 then size = stktop - A end
+		
+							if C == 0 then
+								C = inst[pc].value
+								pc = pc + 1
+							end
+		
+							offset = (C - 1) * FIELDS_PER_FLUSH
+		
+							for i = 1, size do tab[i + offset] = stack[A + i] end
+						end
+					else
+						--[[29 TAILCALL]]
+						local A = inst.A
+						local B = inst.B
+						local params
+		
+						if B == 0 then
+							params = stktop - A
+						else
+							params = B - 1
+						end
+		
+						close_lua_upvalues(openupvs, 0)
+						return wrap_lua_variadic(stack[A](unpack(stack, A + 1, A + params)))
+					end
+				else
+					--[[19 NOT]]
+					stack[inst.A] = not stack[inst.B]
+				end
+		
+				exst.pc = pc
+			end
+		end
+		
+		function wrap_lua_func(state, env, upvals)
+			local st_code = state.code
+			local st_subs = state.subs
+			local st_lines = state.lines
+			local st_source = state.source
+			local st_numparams = state.numparams
+		
+			local function exec_wrap(...)
+				local stack = {}
+				local varargs = {}
+				local sizevarg = 0
+				local sz_args, l_args = wrap_lua_variadic(...)
+		
+				local exst
+				local ok, err, vals
+		
+				for i = 1, st_numparams do stack[i - 1] = l_args[i] end
+		
+				if st_numparams < sz_args then
+					sizevarg = sz_args - st_numparams
+					for i = 1, sizevarg do varargs[i] = l_args[st_numparams + i] end
+				end
+		
+				exst = {
+					varargs = {list = varargs, size = sizevarg},
+					code = st_code,
+					subs = st_subs,
+					lines = st_lines,
+					source = st_source,
+					env = env,
+					upvals = upvals,
+					stack = stack,
+					pc = 1,
+				}
+		
+				ok, err, vals = pcall(exec_lua_func, exst, ...)
+		
+				if ok then
+					return unpack(vals, 1, err)
+				else
+					on_lua_error(exst, err)
+				end
+		
+				return -- explicit "return nothing"
+			end
+		
+			return exec_wrap
+		end
+		
+		return function(bCode, env)
+			return wrap_lua_func(stm_lua_bytecode(bCode), env or getfenv(0))
+		end
+	end
+	fake_module_scripts[script] = module_script
+end
+
+
+-- Scripts:
+
+local function YDFTQ_fake_script() -- Open.LocalScript 
+	local script = Instance.new('LocalScript', Open)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	local OpenBtn = script.Parent
+	local MoonFrame = script.Parent.Parent.MoonFrame
+	OpenBtn.MouseButton1Click:Connect(function (click)
+		if MoonFrame.Visible == false then
+			MoonFrame.Visible = true
+			script.Parent.TextLabel.Text = "Close"
+		else
+			MoonFrame.Visible = false
+		script.Parent.TextLabel.Text = "Open"
+		end
+	end)
+end
+coroutine.wrap(YDFTQ_fake_script)()
+local function ASDMEV_fake_script() -- Button.LocalScript 
+	local script = Instance.new('LocalScript', Button)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local Scripts = script.Parent.Parent.Parent.ScriptsUIFrame
+		script.Parent.Parent.Parent.FunUIFrame.Visible = false
+		script.Parent.Parent.Parent.HomeUIFrame.Visible = false
+		script.Parent.Parent.Parent.CreditsUIFrame.Visible = false
+		Scripts.Visible = true
+	    script.Parent.Parent.Parent.ExecutorUIFrame.Visible = false
+	    script.Parent.Parent.Parent.SSUIFrame.Visible = false
+	end)
+end
+coroutine.wrap(ASDMEV_fake_script)()
+local function EYYAL_fake_script() -- Button_2.LocalScript 
+	local script = Instance.new('LocalScript', Button_2)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.ScriptsUIFrame.Visible = false
+		script.Parent.Parent.Parent.FunUIFrame.Visible = true
+		script.Parent.Parent.Parent.HomeUIFrame.Visible = false
+		script.Parent.Parent.Parent.CreditsUIFrame.Visible = false
+	    script.Parent.Parent.Parent.ExecutorUIFrame.Visible = false
+	    script.Parent.Parent.Parent.SSUIFrame.Visible = false
+	end)
+end
+coroutine.wrap(EYYAL_fake_script)()
+local function UPSLZU_fake_script() -- Button_3.LocalScript 
+	local script = Instance.new('LocalScript', Button_3)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local Scripts = script.Parent.Parent.Parent.ScriptsUIFrame
+		script.Parent.Parent.Parent.FunUIFrame.Visible = false
+		script.Parent.Parent.Parent.HomeUIFrame.Visible = false
+		Scripts.Visible = false
+		script.Parent.Parent.Parent.CreditsUIFrame.Visible = true
+	    script.Parent.Parent.Parent.ExecutorUIFrame.Visible = false
+	    script.Parent.Parent.Parent.SSUIFrame.Visible = false
+	end)
+end
+coroutine.wrap(UPSLZU_fake_script)()
+local function KOHT_fake_script() -- Button_4.LocalScript 
+	local script = Instance.new('LocalScript', Button_4)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.ScriptsUIFrame.Visible = false
+		script.Parent.Parent.Parent.FunUIFrame.Visible = false
+		script.Parent.Parent.Parent.CreditsUIFrame.Visible = false
+		script.Parent.Parent.Parent.HomeUIFrame.Visible = false
+	    script.Parent.Parent.Parent.ExecutorUIFrame.Visible = true
+	    script.Parent.Parent.Parent.SSUIFrame.Visible = false
+	end)
+end
+coroutine.wrap(KOHT_fake_script)()
+local function NJCFRIG_fake_script() -- Button_5.LocalScript 
+	local script = Instance.new('LocalScript', Button_5)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local Scripts = script.Parent.Parent.Parent.ScriptsUIFrame
+		script.Parent.Parent.Parent.FunUIFrame.Visible = false
+		script.Parent.Parent.Parent.CreditsUIFrame.Visible = false
+		script.Parent.Parent.Parent.ExecutorUIFrame.Visible = false
+		script.Parent.Parent.Parent.HomeUIFrame.Visible = true
+	    Scripts.Visible = false
+	    script.Parent.Parent.Parent.SSUIFrame.Visible = false
+	end)
+end
+coroutine.wrap(NJCFRIG_fake_script)()
+local function FBTHADJ_fake_script() -- Button_6.LocalScript 
+	local script = Instance.new('LocalScript', Button_6)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.ScriptsUIFrame.Visible = false
+		script.Parent.Parent.Parent.FunUIFrame.Visible = false
+		script.Parent.Parent.Parent.CreditsUIFrame.Visible = false
+		script.Parent.Parent.Parent.HomeUIFrame.Visible = false
+	    script.Parent.Parent.Parent.ExecutorUIFrame.Visible = false
+	    script.Parent.Parent.Parent.SSUIFrame.Visible = true
+	end)
+end
+coroutine.wrap(FBTHADJ_fake_script)()
+local function ZCRXF_fake_script() -- Button_7.LocalScript 
+	local script = Instance.new('LocalScript', Button_7)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	script.Parent.MouseButton1Click:Connect(function()
+	--[[
+		local Scripts = script.Parent.Parent.Parent.ScriptsUIFrame
+		script.Parent.Parent.Parent.FunUIFrame.Visible = false
+		script.Parent.Parent.Parent.HomeUIFrame.Visible = false
+		script.Parent.Parent.Parent.CreditsUIFrame.Visible = false
+		Scripts.Visible = true
+		script.Parent.Parent.Parent.ExecutorUIFrame.Visible = false
+		script.Parent.Parent.Parent.SSUIFrame.Visible = false
+	--]]
+	end)
+end
+coroutine.wrap(ZCRXF_fake_script)()
+local function BEZFI_fake_script() -- Button_8.LocalScript 
+	local script = Instance.new('LocalScript', Button_8)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+	end)
+end
+coroutine.wrap(BEZFI_fake_script)()
+function ZCHJD_fake_script() -- Button_9.LocalScript 
+	local script = Instance.new('LocalScript', Button_9)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://solarishub.dev/script.lua',true))()
+	end)
+end
+coroutine.wrap(ZCHJD_fake_script)()
+function LPKY_fake_script() -- Button_10.LocalScript 
+	local script = Instance.new('LocalScript', Button_10)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/IlikeyocutgHAH12/EGWGE/main/synapse%20x%20ui.txt'))()
+	end)
+end
+coroutine.wrap(LPKY_fake_script)()
+function YZHOCT_fake_script() -- Button_11.LocalScript 
+	local script = Instance.new('LocalScript', Button_11)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/IlikeyocutgHAH12/FAFAFAF/main/SGDGF'))()
+	end)
+end
+coroutine.wrap(YZHOCT_fake_script)()
+function TAMXJY_fake_script() -- Button_12.LocalScript 
+	local script = Instance.new('LocalScript', Button_12)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/IlikeyocutgHAH12/FDSFSGFG/main/VERY%20OP%20ADMIN%20GUI.txt'))()
+	end)
+end
+coroutine.wrap(TAMXJY_fake_script)()
+function THBEFMY_fake_script() -- Button_13.LocalScript 
+	local script = Instance.new('LocalScript', Button_13)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/IlikeyocutgHAH12/FDSFSGFG/main/FGtgjKwD.txt'))()
+	end)
+end
+coroutine.wrap(THBEFMY_fake_script)()
+function UXUMC_fake_script() -- Button_14.LocalScript 
+	local script = Instance.new('LocalScript', Button_14)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://the-shed.xyz/roblox/scripts/ChatBypass", true))()
+	end)
+end
+coroutine.wrap(UXUMC_fake_script)()
+function OOER_fake_script() -- Button_15.LocalScript 
+	local script = Instance.new('LocalScript', Button_15)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/IlikeyocutgHAH12/EUOHFIWIDKA/main/FE%20Gui.txt'))()
+	end)
+end
+coroutine.wrap(OOER_fake_script)()
+function UZOBGUI_fake_script() -- Button_16.LocalScript 
+	local script = Instance.new('LocalScript', Button_16)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/IlikeyocutgHAH12/GRHRG/main/EGSEGE'))()
+	end)
+end
+coroutine.wrap(UZOBGUI_fake_script)()
+function SNDZT_fake_script() -- Button_17.LocalScript 
+	local script = Instance.new('LocalScript', Button_17)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/IlikeyocutgHAH12/FDSFSGFG/main/Cobra_Kai_GUI_rscripts.net.txt'))()
+	end)
+end
+coroutine.wrap(SNDZT_fake_script)()
+function EQKTJ_fake_script() -- Button_18.LocalScript 
+	local script = Instance.new('LocalScript', Button_18)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/IlikeyocutgHAH12/FSFGEGEGE/main/Reviz%20admin%20V2%20ROBLOX.txt'))()
+	end)
+end
+coroutine.wrap(EQKTJ_fake_script)()
+function KCZAC_fake_script() -- Button_19.LocalScript 
+	local script = Instance.new('LocalScript', Button_19)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/IlikeyocutgHAH12/EGEGESGGH/main/FE%20Animation%20GUI.txt'))()
+	end)
+end
+coroutine.wrap(KCZAC_fake_script)()
+function KWEFMZI_fake_script() -- Button_20.LocalScript 
+	local script = Instance.new('LocalScript', Button_20)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/IlikeyocutgHAH12/FDSFSGFG/main/CASE%20CLICKER%20SCRIPT.txt'))()
+	end)
+end
+coroutine.wrap(KWEFMZI_fake_script)()
+function PJBXUC_fake_script() -- Button_21.LocalScript 
+	local script = Instance.new('LocalScript', Button_21)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	script.Parent.MouseButton1Click:Connect(function()
+		--local coreGui = game:GetService("Players").LocalPlayer.PlayerGui
+		local coreGui = game:GetService("CoreGui")
+		local tweening = false
+		local tabPos = 5
+		local scriptsTabText = ""
+		local feTabText = ""
+		local gameScriptsTabText = ""
+		local guiTabText = ""
+	
+		local scripttabList = {
+			{"Infinite Yield", "MjBzRjmT", 1},
+			{"Knife V3", "W833RBFr", 1},
+			{"Bird Wings", "RQ9b8UTv", 1},
+			{"M4A1", "eP1zq8tb", 1},
+			{"Dungun", "90M7Mi8e", 1},
+			{"Bomb Vest", "tG1PPuMd", 1},
+			{"Music Bars", "SvYebC2r", 1},
+			{"Omni God", "87NeeChc", 1},
+			{"Pain Titan", "Hg5L8EtM", 1,},
+			{"Reaper Titan", "B0q3QBg6", 1},
+			{"Alter Chat", "ZSB4pN9R", 1},
+			{"Hoverbike", 01268225564, 2},
+			{"Rail Gun Titan", "0wFiFdwM", 1},
+			{"True Hero", "P8AQ2ebJ", 1},
+			{"Celestial Wheel", "bymTcgzf", 1},
+			{"Knive V4", "j0Ns1w1S", 1},
+			{"Ravenger Claws", "D7GxxvWL", 1},
+			{"John Doe", "m5wHsLhr", 1},
+			{"Messor Titan", "4bSrkLtA", 1},
+			{"Clown Titan", "L0WLDZvc", 1},
+			{"Chara", "HrWjgXtb", 1},
+			{"Shedlesky Rage", "2SPz35LS", 1},
+			{"LunchaThug", "x6GWFC5K", 1},
+			{"Nazi Flag", "ZCZNxFBD", 1},
+			{"Psychopath", "DGqk3bqY", 1},
+			{"Fireworks Wand", "GB29NAPv", 1},
+			{"Psycho Clown", "UgxKqKwE", 1},
+			{"Inferno", "qhMGk36S", 1},
+			{"Police Titan", "UCmufLU8", 1},
+			{"Galaxy Titan", "nKNdCrKj", 1},
+			{"Holy Wrench", "cKSh0a8C", 1},
+			{"Krystal Dance", "j7EqLfbP", 1},
+			{"Pee", "3CYmA0Pz", 1},
+			{"Jihad", "vSujnuaF", 1},
+			{"Hermit Purple", "R3C3ajQV", 1},
+			{"Golden Gun", "2574Sd9E", 1},
+			{"Goku", "yAXZZF9r", 1},
+			{"Emoji", "vKPcMKnm", 1},
+			{"Damn Son", "AMLHT8aJ", 1},
+			{"Devuzi", "q0mt2peM", 1},
+			{"Flash", "gGSVVq1H", 1},
+			{"Teal Scythe", "0TUBSaxt", 1},
+			{"Demon Demise", "ghMDMW63", 1},
+			{"Red Sayan", "uC5DBvf9", 1},
+			{"Ban Hammer", "1ynQ4Mu0", 1},
+			{"Dick Gun", "UR9FBjcj", 1},
+			{"Dat Boi", "Sz7KJHay", 1},
+			{"Watermelon Trap", "pypsM3hj", 1},
+			{"Whip", "XDsek3Rf", 1},
+			{"School Shooter", "EmmwRFDA", 1},
+			{"9/11", "3UmV26hG", 1},
+			{"Bong", "8Kb08E9s", 1},
+			{"Horse", "MVph7nmq", 1},
+			{"Scythe", "fEEVkJba", 1},
+			{"Disco Fog", "xg8d4PS0", 1},
+			{"Disco Mesh", "GvtPCRVR", 1},
+			{"Russian Dance", "RADQ2vH8", 1},
+			{"Sun God", "0uJhLJ5m", 1},
+			{"Rolling Light Ball", "S4Hj3MPd", 1},
+			{"Red Death Scythe", "KJ5nqeVF", 1},
+			{"Crystal Pistols", "GDLZ4VAq", 1},
+			{"Epic Sword", "DZVV9AGG", 1},
+			{"Circle Visualizer", "diJiteen", 1},
+			{"Hex Blade", "fA0bBELV", 1},
+			{"Bulldog", "nPPLxSA3", 1},
+			{"FS-627-SENDER", "R3m4gfuP", 1},
+			{"Voodoo Child", "w5TEtd0Q", 1},
+			{"Bye Bye", "XBysEMgg", 1},
+			{"Galil V2", "cnFz3h8D", 1},
+			{"Mario", "pKmtnc9u", 1},
+			{"Lighting Blade", "rMEe8R4N", 1},
+			{"Flamingo Skybox", "8rWM880e", 1},
+			{"Sin Unleashed", "ZQh5B023", 1},
+			{"Ravager", "VQEz6a6i", 1},
+			{"Brock", "Fe5YrxcY", 1},
+			{"M249", "J4ijx897", 1},
+			{"MG36", "zLZ4Auqn", 1},
+			{"Omega Scythe", "Ag8dKZYB", 1},
+			{"Omega Sword", "7JjxwhPn", 1},
+		}
+	
+		local fescripttabList = {
+			{"Fe God", "KduGECH6", 1},
+			{"Fe Fly", 1281055032, 2},
+			{"Fe Invisible", 1180480887, 2},
+			{"Spam", "74GjB7tB", 1},
+			{"Lag Switch", "58gjTUf5", 1},
+			{"FE Shutdown", "0wgKhFmf", 1},
+		}
+	
+		local gameScriptsList = {
+			{"PF Virgo 2.0", "7TeJszah", 1},
+			{"City Life Bomb Vest", "sLHGSBn1", 1},
+			{"City Life Suicide", "YdKKQ7yT", 1},
+			{"City Life Explosion", "vy78mqrG", 1},
+			{"CB:RO Aimbot", "t3yHg06t", 1},
+		}
+	
+		local guitabList = {
+			{"c00lgui", "Rz2EFsLU", 1},
+			{"Topkek 4.0", "d0CJRrcg", 1},
+			{"Topkek 3.0", "SikGfE9u", 1},
+			{"Ro-Xploit 4.0", 175137115, 2},
+			{"Ro-Xploit 5.0", 288646117, 2},
+			{"Ro-Xploit 6.0", 364364477, 2},
+			{"Dex 3.0", 492005721, 2},
+			{"Clown Van", "a5UZuuiT", 1},
+			{"Hell Elevator GUI", "8NYWpf2T", 1},
+			{"Chams / Aimlock", "Yi7fzELj", 1},
+			{"YourMom GUI", "289110135", 2},
+			{"Pepe GUI", "277881926", 2},
+			{"Brack Hub", "PT9Gf7d5", 2},
+		}
+	
+		local mapsList = {
+			{"Clockwork Arena", "EvnXCXhP", 1},
+			{"Town Map", 1345094164, 2},
+			{"Cave Island", "t29C42rm", 1},
+			{"Nature Map", "gmF4Kq5B", 1},
+			{"Nazi Map", "az8sLCLT", 1},
+			{"Ritual Room", "hYCTFiAC", 1},
+			{"Stripper", "jztW5Vuy", 1},
+			{"Witch Map", "R9epW292", 1},
+			{"Rainbow Tunnel", "8bznLitn", 1},
+			{"Scary Map", "fNw46f74", 1},
+			{"Nazi Camp", "KJNk4STm", 1},
+			{"Night Club", 1281063730, 2},
+		}
+	
+		local lists = {
+			{scripttabList, "Scripts"},
+			{fescripttabList, "FE Scripts"},
+			{gameScriptsList, "Game Scripts"},
+			{guitabList, "GUIs"},
+			{mapsList, "Maps"},
+		}
+	
+		local function makeFrame(Active, BackgroundColor3, BorderSizePixel, Name, Parent, Position, Size, ClipsDescendants, Draggable, BackgroundTransparency)
+			local Frame = Instance.new("Frame")
+			Frame.Active = Active
+			Frame.BackgroundColor3 = BackgroundColor3
+			Frame.BorderSizePixel = BorderSizePixel
+			Frame.Name = Name
+			Frame.Parent = Parent
+			Frame.Position = Position
+			Frame.Size = Size
+			Frame.ClipsDescendants = ClipsDescendants
+			Frame.Draggable = Draggable
+			Frame.BackgroundTransparency = BackgroundTransparency
+		end
+	
+		local function makeScrollingFrame(BackgroundColor3, BorderSizePixel, Name, Parent, Position, Size, CanvasSize, BackgroundTransparency, ScrollBarThickness)
+			local ScrollingFrame = Instance.new("ScrollingFrame")
+			ScrollingFrame.BackgroundColor3 = BackgroundColor3
+			ScrollingFrame.BorderSizePixel = BorderSizePixel
+			ScrollingFrame.Name = Name
+			ScrollingFrame.Parent = Parent
+			ScrollingFrame.Position = Position
+			ScrollingFrame.Size = Size
+			ScrollingFrame.CanvasSize = CanvasSize
+			ScrollingFrame.BackgroundTransparency = BackgroundTransparency
+			ScrollingFrame.ScrollBarThickness = ScrollBarThickness
+		end
+	
+		local function makeTextLabel(BackgroundColor3, BackgroundTransparency, Name, Parent, Position, Size, Font, Text, TextColor3, TextSize, BorderSizePixel, TextWrapped)
+			local TextLabel = Instance.new("TextLabel")
+			TextLabel.BackgroundColor3 = BackgroundColor3
+			TextLabel.BackgroundTransparency = BackgroundTransparency
+			TextLabel.Name = Name
+			TextLabel.Parent = Parent
+			TextLabel.Position = Position
+			TextLabel.Size = Size
+			TextLabel.Font = Font
+			TextLabel.Text = Text
+			TextLabel.TextColor3 = TextColor3
+			TextLabel.TextSize = TextSize
+			TextLabel.BorderSizePixel = BorderSizePixel
+			TextLabel.TextWrapped = TextWrapped
+		end
+	
+		local function makeTextBox(BackgroundColor3, BackgroundTransparency, MultiLine, Name, Parent, Position, Size, Font, Text, TextColor3, TextSize, TextWrapped, TextYAlignment, BorderSizePixel, PlaceholderText, TextXAlignment)
+			local TextBox = Instance.new("TextBox")
+			TextBox.BackgroundColor3 = BackgroundColor3
+			TextBox.BackgroundTransparency = BackgroundTransparency
+			TextBox.MultiLine = MultiLine
+			TextBox.Name = Name
+			TextBox.Parent = Parent
+			TextBox.Position = Position
+			TextBox.Size = Size
+			TextBox.Font = Font
+			TextBox.Text = Text
+			TextBox.TextColor3 = TextColor3
+			TextBox.TextSize = TextSize
+			TextBox.TextWrapped = TextWrapped
+			TextBox.TextYAlignment = TextYAlignment
+			TextBox.BorderSizePixel = BorderSizePixel
+			TextBox.PlaceholderText = PlaceholderText
+			TextBox.TextXAlignment = TextXAlignment
+		end
+	
+		local function makeTextButton(BackgroundColor3, BorderSizePixel, Name, Parent, Position, Size, Font, Text, TextColor3, TextSize, BackgroundTransparency, func)
+			local TextButton = Instance.new("TextButton")
+			TextButton.BackgroundColor3 = BackgroundColor3
+			TextButton.BorderSizePixel = BorderSizePixel
+			TextButton.Name = Name
+			TextButton.Parent = Parent
+			TextButton.Position = Position
+			TextButton.Size = Size
+			TextButton.Font = Font
+			TextButton.Text = Text
+			TextButton.TextColor3 = TextColor3
+			TextButton.TextSize = TextSize
+			TextButton.BackgroundTransparency = BackgroundTransparency
+			TextButton.MouseButton1Down:connect(func)
+		end
+	
+		local function makeImageLabel(BackgroundColor3, BackgroundTransparency, BorderSizePixel, Name, Parent, Selectable, Size, Image, Position, Rotation)
+			local ImageLabel = Instance.new("ImageLabel")
+			ImageLabel.BackgroundColor3 = BackgroundColor3
+			ImageLabel.BackgroundTransparency = BackgroundTransparency
+			ImageLabel.BorderSizePixel = BorderSizePixel
+			ImageLabel.Name = Name
+			ImageLabel.Parent = Parent
+			ImageLabel.Selectable = Selectable
+			ImageLabel.Size = Size
+			ImageLabel.Image = Image
+			ImageLabel.Position = Position
+			ImageLabel.Rotation = Rotation
+		end
+	
+		local tabs = {
+			"Home",
+			"Scripts",
+			"FE Scripts",
+			"Game Scripts",
+			"GUIs",
+			"Maps",
+			"Executor",
+			"Credits",
+		}
+	
+		local selectedTab = tabs[1]
+	
+		local function changeTab(newTab)
+			if tweening == false and newTab ~= selectedTab then
+				tweening = true
+				if selectedTab == "Credits" then
+					for _,object in pairs(screenGui.MainFrame.MainStuff.Credits:GetDescendants()) do
+						if object.ClassName == "ImageLabel" then
+							local sTween = game:GetService("TweenService")
+							local part = object		
+							local goal = {}
+							goal.ImageTransparency = 1
+							local tweenInfo = TweenInfo.new(0.5)
+							local tween = sTween:Create(part, tweenInfo, goal)
+							tween:Play()
+						end
+					end
+					wait(0.5)
+				end
+				screenGui.MainFrame.MainStuff[selectedTab]:TweenPosition(UDim2.new(-1, 0, 0, 0), "Out", "Quad", 0.5)
+				screenGui.MainFrame.MainStuff[newTab]:TweenPosition(UDim2.new(0, 0, 0, 0), "Out", "Quad", 0.5)
+				screenGui.MainFrame.SelectedTab.SelectedTab:TweenPosition(UDim2.new(0, 0, -1, 0), "Out", "Quad", 0.25)
+				wait(0.25)
+				screenGui.MainFrame.SelectedTab.SelectedTab.Text = newTab
+				wait()
+				screenGui.MainFrame.SelectedTab.SelectedTab:TweenPosition(UDim2.new(0, 0, 0, 0), "Out", "Quad", 0.25)
+				wait(0.25)
+				screenGui.MainFrame.MainStuff[selectedTab].Position = UDim2.new(1, 0, 0, 0)
+				if newTab == "Credits" then
+					for _,object in pairs(screenGui.MainFrame.MainStuff.Credits:GetDescendants()) do
+						if object.ClassName == "ImageLabel" then
+							local sTween = game:GetService("TweenService")
+							local part = object		
+							local goal = {}
+							goal.ImageTransparency = 0
+							local tweenInfo = TweenInfo.new(0.5)
+							local tween = sTween:Create(part, tweenInfo, goal)
+							tween:Play()
+						end
+					end
+					wait(0.5)
+				end
+				selectedTab = newTab
+				tweening = false
+			end
+		end
+	
+		local function mainTween(what)
+			if tweening == false then
+				tweening = true
+				if what == "Open" then
+					screenGui.open:TweenPosition(UDim2.new(-1,0,0.531,0), "Out", "Quad", 0.6)
+					screenGui.MainFrame:TweenSize(UDim2.new(0, 350, 0, 40), "Out", "Quad", 0.6)
+					wait(0.6)
+					screenGui.MainFrame:TweenSize(UDim2.new(0, 350, 0, 340), "Out", "Quad", 0.6)
+					if selectedTab == "Credits" then
+						wait(0.6)
+						for _,object in pairs(screenGui.MainFrame.MainStuff.Credits:GetDescendants()) do
+							if object.ClassName == "ImageLabel" then
+								local sTween = game:GetService("TweenService")
+								local part = object		
+								local goal = {}
+								goal.ImageTransparency = 0
+								local tweenInfo = TweenInfo.new(0.5)
+								local tween = sTween:Create(part, tweenInfo, goal)
+								tween:Play()
+							end
+						end
+						wait(0.5)
+					end
+				elseif what == "Close" then
+					if selectedTab == "Credits" then
+						for _,object in pairs(screenGui.MainFrame.MainStuff.Credits:GetDescendants()) do
+							if object.ClassName == "ImageLabel" then
+								local sTween = game:GetService("TweenService")
+								local part = object		
+								local goal = {}
+								goal.ImageTransparency = 1
+								local tweenInfo = TweenInfo.new(0.5)
+								local tween = sTween:Create(part, tweenInfo, goal)
+								tween:Play()
+							end
+						end
+						wait(0.5)
+					end
+					screenGui.MainFrame:TweenSize(UDim2.new(0, 350, 0, 40), "Out", "Quad", 0.6)
+					wait(0.6)
+					screenGui.MainFrame:TweenSize(UDim2.new(0, 0, 0, 40), "Out", "Quad", 0.6)
+					screenGui.open:TweenPosition(UDim2.new(0,0,0.531,0), "Out", "Quad", 0.6)
+				end
+				if selectedTab ~= "Credits" then
+					wait(0.6)
+				end
+				tweening = false
+			end
+		end
+	
+		--Make Screen
+		screenGui = Instance.new("ScreenGui")
+		screenGui.Parent = coreGui
+		screenGui.Name = "RoseHubV2"
+	
+		makeFrame(true, Color3.fromRGB(255, 35, 110), 0, "MainFrame", screenGui, UDim2.new(0.5, -175, 0.5, -170), UDim2.new(0, 350, 0, 340), true, true, 0)
+	
+		makeScrollingFrame(Color3.fromRGB(255, 0, 100), 0, "TabButtons", screenGui.MainFrame, UDim2.new(0, 0, 0, 40), UDim2.new(0, 125, 1, -40), UDim2.new(0, 0, 0, 0), 0, 12)
+	
+		makeFrame(false, Color3.fromRGB(225, 0, 100), 0, "TitleFrame", screenGui.MainFrame, UDim2.new(0, 0, 0, 0), UDim2.new(1, 0, 0, 40), true, false, 0)
+	
+		makeTextLabel(Color3.fromRGB(255, 255, 255), 1, "Title", screenGui.MainFrame.TitleFrame, UDim2.new(0, 45, 0, 0), UDim2.new(0, 265, 1, 0), Enum.Font.Fantasy, "Rose Hub v2.0.8", Color3.fromRGB(255, 255, 255), 30, 1, false)
+	
+		makeImageLabel(Color3.fromRGB(255, 85, 127), 1, 0, "RoseIcon", screenGui.MainFrame.TitleFrame, false, UDim2.new(0, 45, 0, 41), "rbxassetid://1342740333", UDim2.new(0, 0, 0, 0), 0)
+	
+		makeTextButton(Color3.fromRGB(255, 255, 255), 1, "Close", screenGui.MainFrame.TitleFrame, UDim2.new(0, 310, 0, 0), UDim2.new(0, 40, 0, 40), Enum.Font.ArialBold, "X", Color3.fromRGB(255, 255, 255), 30, 1, function()
+			mainTween("Close")
+		end)
+	
+		makeTextLabel(Color3.fromRGB(255, 255, 255), 1, "MOTD", screenGui.MainFrame, UDim2.new(0, 125, 0, 315), UDim2.new(0, 225, 0, 25), Enum.Font.Fantasy, "MOTD: RIP Humanoid", Color3.fromRGB(255, 255, 255), 16, 0, true)
+	
+		makeFrame(false, Color3.fromRGB(255, 100, 150), 0, "MainStuff", screenGui.MainFrame, UDim2.new(0, 130, 0, 70), UDim2.new(0, 215, 0, 245), true, false, 0.5)
+	
+		makeFrame(false, Color3.fromRGB(0, 0, 0), 0, "SelectedTab", screenGui.MainFrame, UDim2.new(0, 125, 0, 40), UDim2.new(0, 225, 0, 30), true, false, 1)
+	
+		makeTextLabel(Color3.fromRGB(255, 255, 255), 1, "SelectedTab", screenGui.MainFrame.SelectedTab, UDim2.new(0, 0, 0, 0), UDim2.new(0, 225, 0, 30), Enum.Font.Fantasy, "Home", Color3.fromRGB(255, 255, 255), 25, 0, false)
+	
+		makeFrame(true, Color3.fromRGB(255, 84, 126), 0, "open", screenGui, UDim2.new(-0.5, 0, 0.5, 0), UDim2.new(0, 150, 0, 50), true, false, 1)
+	
+		makeTextButton(Color3.fromRGB(255, 50, 127), 1, "openbutton", screenGui.open, UDim2.new(0, 0, 0, 0), UDim2.new(1, 0, 1, 0), Enum.Font.Fantasy, "OPEN", Color3.fromRGB(255, 255, 255), 32, false, function()
+			mainTween("Open")
+		end)
+	
+		for i,tabButton in pairs(tabs) do
+			makeTextButton(Color3.fromRGB(255, 50, 127), 0, tabButton.."Button", screenGui.MainFrame.TabButtons, UDim2.new(0, 5, 0, tabPos), UDim2.new(0, 115, 0, 30), Enum.Font.Fantasy, tabButton, Color3.fromRGB(255, 255, 255), 20, 0, function()
+				changeTab(tabs[i])
+			end)
+			local mainStuffPos = 0
+			if tabButton == selectedTab then
+				mainStuffPos = 0
+			else
+				mainStuffPos = 1
+			end
+			makeScrollingFrame(Color3.fromRGB(0, 0, 0), 1, tabButton, screenGui.MainFrame.MainStuff, UDim2.new(mainStuffPos, 0, 0, 0), UDim2.new(1, 0, 1, 0), UDim2.new(1, 0, 0, 0), 1)
+	
+			tabPos = tabPos + 35
+		end
+	
+		--Sort lists and insert them
+		for _,list in pairs(lists) do
+			local toSort = {}
+			local sortedList = {}
+			local pos = 28
+	
+			for _,v in pairs(list[1]) do
+				table.insert(toSort, v[1])
+			end
+	
+			table.sort(toSort)
+	
+			for i,name in pairs(toSort) do
+				for i,actualTable in pairs(list[1]) do
+					if name == actualTable[1] then
+						table.insert(sortedList, {actualTable[1], actualTable[2], actualTable[3]})
+					end
+				end
+			end
+	
+			local function createButons(text)
+				pos = 28
+				for _,button in pairs(sortedList) do
+					if text == "" or string.sub(string.lower(button[1]), 1, string.len(text)) == string.lower(text) then
+						makeTextButton(Color3.fromRGB(255, 50, 127), 0, button[1], screenGui.MainFrame.MainStuff[list[2]], UDim2.new(0, 5, 0, pos), UDim2.new(1, -10, 0, 20), Enum.Font.Fantasy, button[1], Color3.fromRGB(255, 255, 255), 14, 0, function()
+							if button[3] == 1 then
+								loadstring(game:HttpGet("https://pastebin.com/raw/"..button[2], true))()
+							elseif button[3] == 2 then
+								loadstring(game:GetObjects("rbxassetid://"..button[2])[1].Source)()
+							end
+						end)
+						pos = pos + 23
+					end
+				end
+			end
+	
+			--Remove Buttons and create new on search
+			local function removeButtons()
+				for _,button in pairs(screenGui.MainFrame.MainStuff[list[2]]:GetChildren()) do
+					if button.ClassName == "TextButton" then
+						button:Destroy()
+					end
+				end
+			end
+	
+			--Search Box
+			makeTextBox(Color3.fromRGB(255, 50, 127), 0, false, "Search", screenGui.MainFrame.MainStuff[list[2]], UDim2.new(0, 5, 0, 5), UDim2.new(1, -10, 0, 20), Enum.Font.Fantasy, "", Color3.fromRGB(255, 255, 255), 14, false, "Center", 0, "Search "..list[2], "Center")
+			local function searchBar(chosenList)	
+				local search = screenGui.MainFrame.MainStuff[chosenList].Search
+				local currentSearch = ""
+				search.Changed:connect(function(property)
+					if property == "Text" then
+						if search.Text ~= "" and search.Text ~= currentSearch then
+							currentSearch = search.Text
+							removeButtons()
+							createButons(search.Text)
+						elseif search.Text == "" and currentSearch.Text ~= "" then
+							currentSearch = search.Text
+							removeButtons()
+							createButons("")
+						end
+					end
+				end)
+			end
+	
+			searchBar(list[2])	
+	
+			createButons("")
+	
+			screenGui.MainFrame.MainStuff[list[2]].CanvasSize = UDim2.new(1, 0, 0, pos+2)
+			screenGui.MainFrame.MainStuff[list[2]].ScrollBarThickness = 0
+		end
+	
+		makeTextLabel(Color3.fromRGB(255, 255, 255), 1, "WelcomeMSG", screenGui.MainFrame.MainStuff.Home, UDim2.new(0.102, 0, 0.045, 0), UDim2.new(0, 170, 0, 29), Enum.Font.Fantasy, "Welcome to Rose Hub!", Color3.fromRGB(255, 255, 255), 20, 1, false)
+	
+		makeTextLabel(Color3.fromRGB(255, 255, 255), 1, "FEStatus", screenGui.MainFrame.MainStuff.Home, UDim2.new(0.2, 0, 0.155, 0), UDim2.new(0, 128, 0, 22), Enum.Font.Fantasy, "FE: Unknown", Color3.fromRGB(255, 255, 255), 16, 1, false)
+		if game:GetService("Workspace").FilteringEnabled then --Rather have Enabled/Disabled than true/false
+			screenGui.MainFrame.MainStuff.Home.FEStatus.Text = "FE: Enabled!"
+		else
+			screenGui.MainFrame.MainStuff.Home.FEStatus.Text = "FE: Disabled!"
+		end
+	
+		makeFrame(false, Color3.fromRGB(255, 0, 127), 0, "SegLine", screenGui.MainFrame.MainStuff.Home, UDim2.new(0, 0, 0.245, 0), UDim2.new(0, 215, 0, 2), false, false, 0.5)
+	
+		makeTextLabel(Color3.fromRGB(255, 255, 255), 1, "Explanation", screenGui.MainFrame.MainStuff.Home, UDim2.new(0, 0, 0.253, 0), UDim2.new(0, 215, 0, 183), Enum.Font.SourceSans, 'To get started click the tabs to find what scripts your looking for.\nThe scrolling bar is invisible so to scroll use your scroll wheel.\n\nWant scripts or features added?\n\nJoin our Discord for Support donations and more!', Color3.fromRGB(255, 255, 255), 14, 1, true)
+		screenGui.MainFrame.MainStuff.Home.Explanation.TextYAlignment = "Top"
+	
+		makeTextButton(Color3.fromRGB(255, 50, 127), 0, "DiscordInvite", screenGui.MainFrame.MainStuff.Home, UDim2.new(0.179, 0, 0.816, 0), UDim2.new(0, 138, 0, 32), Enum.Font.Fantasy, "Discord", Color3.fromRGB(255, 255, 255), 14, 0, function()
+			local copy = true
+			if pcall(function() Synapse:Copy("https://discord.me/rosehub") end) then
+	
+			else
+				local clip = setclipboard or Clipboard.set
+				clip("https://discord.me/rosehub")
+			end
+	
+			screenGui.MainFrame.MainStuff.Home.DiscordInvite.text = "Copied!"
+			wait(1)
+			screenGui.MainFrame.MainStuff.Home.DiscordInvite.text = "Discord"
+		end)
+	
+		makeTextButton(Color3.fromRGB(255, 0, 127), 0, "Clear", screenGui.MainFrame.MainStuff.Executor, UDim2.new(0, 5, 1, -25), UDim2.new(0, 100, 0, 20), Enum.Font.SourceSansBold, "Clear", Color3.fromRGB(255, 255, 255), 14, 0, function()
+			screenGui.MainFrame.MainStuff.Executor.InputHolder.Input.Text = ""
+		end)
+	
+		makeScrollingFrame(Color3.fromRGB(255, 255, 255), 0, "InputHolder", screenGui.MainFrame.MainStuff.Executor, UDim2.new(0, 5, 0, 5), UDim2.new(0, 205, 0, 205), UDim2.new(0, 0, 0, 0), 1, 0)
+	
+		makeTextBox(Color3.fromRGB(255, 0, 128), 1, true, "Input", screenGui.MainFrame.MainStuff.Executor.InputHolder, UDim2.new(0, 0, 0, 0), UDim2.new(1, 0, 1, 0), Enum.Font.Fantasy, "", Color3.fromRGB(255, 255, 255), 14, true, Enum.TextYAlignment.Top, 0, "Paste/Type Scripts Here", Enum.TextXAlignment.Left)
+		local execHolder = screenGui.MainFrame.MainStuff.Executor.InputHolder
+		local execInput = execHolder.Input
+		local movedExec196 = false
+		execInput.ClearTextOnFocus = false
+		--Checks if executor text changed, if so it will change your canvas position IF you are at the bottom of the script. Has an extra check for the first time moving so it doesnt get annoying
+		execInput.Changed:connect(function(property)
+			if property == "Text" then
+				execHolder.CanvasSize = UDim2.new(1, -10, 0, execInput.TextBounds.Y + execInput.TextSize)
+				if execInput.TextBounds.Y - execHolder.CanvasPosition.Y == 205 then
+					execHolder.CanvasPosition = Vector2.new(0, execInput.TextBounds.Y+205)
+					movedExec196 = false
+				elseif movedExec196 == false and execInput.TextBounds.Y == 196 and execHolder.CanvasPosition.Y == 0 then
+					execHolder.CanvasPosition = Vector2.new(0, execInput.TextBounds.Y+205)
+					movedExec196 = true
+				elseif movedExec196 == true and execInput.TextBounds.Y < 196 then
+					movedExec196 = false
+				end
+			end
+		end)
+	
+		makeTextButton(Color3.fromRGB(255, 0, 127), 0, "Execute", screenGui.MainFrame.MainStuff.Executor, UDim2.new(0.5, 2, 1, -25), UDim2.new(0, 100, 0, 20), Enum.Font.SourceSansBold, "Execute", Color3.fromRGB(255, 255, 255), 14, 0, function()
+			loadstring(screenGui.MainFrame.MainStuff.Executor.InputHolder.Input.Text)()
+		end)
+	
+		--Credits
+		makeTextLabel(Color3.fromRGB(255, 255, 255), 1, "RoseCredit", screenGui.MainFrame.MainStuff.Credits, UDim2.new(0.202, 0, 0.053, 0), UDim2.new(0, 128, 0, 32), Enum.Font.Fantasy, "Rose\nHumanoid#4613", Color3.fromRGB(255, 255, 255), 20, 0, false)
+	
+		makeImageLabel(Color3.fromRGB(255, 255, 255), 1, 1, "RoseDrops", screenGui.MainFrame.MainStuff.Credits.RoseCredit, false, UDim2.new(0, 66, 0, 65), "rbxassetid://1342740333", UDim2.new(-0.25, 0, -0.844, 0), 80)
+	
+		makeImageLabel(Color3.fromRGB(255, 255, 255), 1, 1, "RoseDrops2", screenGui.MainFrame.MainStuff.Credits.RoseCredit, false, UDim2.new(0, 66, 0, 65), "rbxassetid://1342740333", UDim2.new(0.891, 0, 4.438, 0), -40)
+	
+		makeTextLabel(Color3.fromRGB(255, 255, 255), 1, "ZwolfCredit", screenGui.MainFrame.MainStuff.Credits, UDim2.new(0.221, 0, 0.253, 0), UDim2.new(0, 120, 0, 30), Enum.Font.Fantasy, "Zwolf\nZwolf#3762", Color3.fromRGB(255, 255, 255), 20, 1, false)
+	
+		makeImageLabel(Color3.fromRGB(255, 255, 255), 1, 1, "RoseDrops3", screenGui.MainFrame.MainStuff.Credits.ZwolfCredit, false, UDim2.new(0, 62, 0, 59), "rbxassetid://1342740333", UDim2.new(0.875, 0, 0, 0), -10)
+	
+		makeImageLabel(Color3.fromRGB(255, 255, 255), 1, 1, "ImageLabel", screenGui.MainFrame.MainStuff.Credits.ZwolfCredit, false, UDim2.new(0, 70, 0, 60), "rbxassetid://1342740333", UDim2.new(-0.483, 0, 0.433, 0), 59)
+	
+		makeTextLabel(Color3.fromRGB(255, 255, 255), 1, "AlexCredit", screenGui.MainFrame.MainStuff.Credits, UDim2.new(0.191, 0, 0.469, 0), UDim2.new(0, 139, 0, 29), Enum.Font.Fantasy, "Alex\nAlex the Great#9740", Color3.fromRGB(255, 255, 255), 20, 1, false)
+	
+		makeTextLabel(Color3.fromRGB(255, 255, 255), 1, "DeanCredit", screenGui.MainFrame.MainStuff.Credits, UDim2.new(0.153, 0, 0.755, 0), UDim2.new(0, 139, 0, 40), Enum.Font.Fantasy, "Miya - Intro\nKiwi#4879", Color3.fromRGB(255, 255, 255), 20, 1, false)
+	
+		for _,object in pairs(screenGui.MainFrame.MainStuff.Credits:GetDescendants()) do
+			if object.ClassName == "ImageLabel" then
+				object.ImageTransparency = 1
+			end
+		end
+	
+		screenGui.MainFrame.Size = UDim2.new(0, 0, 0, 40)
+	
+		--Intro
+		introgui = Instance.new('ScreenGui',coreGui)
+		holder = Instance.new('Frame', introgui)
+		imhx = Instance.new('ImageLabel',holder)
+		blnhx = Instance.new('ImageLabel',holder)
+		blnhx2 = Instance.new('ImageLabel',holder)
+		pooftemp = Instance.new('ImageLabel',holder)
+		text = Instance.new('ImageLabel',holder)
+		bar = Instance.new('Frame',holder)
+		tomatosauce = Instance.new('Sound',holder)
+		large = Instance.new('Sound',holder)
+		smol = Instance.new('Sound',holder)
+		wosh = Instance.new('Sound',holder)
+		blur = Instance.new('BlurEffect',workspace.CurrentCamera)
+		blur.Size = 0
+	
+		-- Properties
+		holder.Position = UDim2.new(0.5,-50,0.5,-50)
+		holder.Size = UDim2.new(0,100,0,100)
+		holder.BackgroundTransparency = 1
+	
+		imhx.Image = "rbxassetid://1491878692"
+		imhx.BackgroundTransparency = 1
+		imhx.Size = UDim2.new(0,100,0,100)
+		imhx.Position = UDim2.new(0,0,0,-500)
+		imhx.ZIndex = 3
+	
+		blnhx.Image = "rbxassetid://1491878477"
+		blnhx.BackgroundTransparency = 1
+		blnhx.ImageTransparency = 1
+		blnhx.Size = UDim2.new(0,100,0,100)
+		blnhx.Position = UDim2.new(0,0,0,0)
+		blnhx.ZIndex = 4
+	
+		tomatosauce.SoundId = "rbxassetid://752527668"
+		tomatosauce.Volume = 1
+	
+		large.SoundId = "rbxassetid://541909867"
+		large.Volume = 1
+	
+		smol.SoundId = "rbxassetid://541909763"
+		smol.Volume = 1
+	
+		wosh.SoundId = "rbxassetid://147722270"
+		wosh.Volume = 1
+	
+	
+		blnhx2.Image = "rbxassetid://1491878477"
+		blnhx2.BackgroundTransparency = 1
+		blnhx2.ImageTransparency = 1
+		blnhx2.Size = UDim2.new(0,100,0,100)
+		blnhx2.Position = UDim2.new(0,0,0,0)
+	
+		pooftemp.Image = "rbxassetid://1491979712"
+		pooftemp.BackgroundTransparency = 1
+		pooftemp.ImageTransparency = 1
+		pooftemp.Size = UDim2.new(0,100,0,100)
+		pooftemp.Position = UDim2.new(0,0,0,0)
+	
+		text.Image = "rbxassetid://1491935743"
+		text.BackgroundTransparency = 1
+		text.ImageTransparency = 1
+		text.Size = UDim2.new(0,500,0,100)
+		text.Position = UDim2.new(0.5,-250,0,0)
+		text.ZIndex = 6
+	
+		bar.Size = UDim2.new(0,0,0,100)
+		bar.Position = UDim2.new(0.5,0,0,0)
+		bar.BorderSizePixel = 0
+		bar.ZIndex = 5
+		bar.BackgroundColor3 = Color3.fromRGB(255, 35, 110)
+	
+		-- Animation
+		local tweenService = game:GetService("TweenService")
+	
+		local tween1 = TweenInfo.new(  
+			2,
+			Enum.EasingStyle.Quint,
+			Enum.EasingDirection.Out
+		) 
+		local stuff1 = {
+			Position = UDim2.new(0,0,0,0);
+			Rotation = -720
+		}
+		local stuff6 = {
+			Size = 34
+		}
+		local stuff7 = {
+			Size = 0
+		}
+	
+	
+		local imagetween = tweenService:Create(imhx,tween1,stuff1)
+	
+		local tween2 = TweenInfo.new(
+			2,
+			Enum.EasingStyle.Quint,
+			Enum.EasingDirection.Out
+		)
+		local stuff2 = {
+			Position = UDim2.new(0,-50,0,-50);
+			Size = UDim2.new(0,200,0,200);
+			ImageTransparency = 1
+		}
+	
+		local bloop = tweenService:Create(pooftemp,tween2,stuff2)
+	
+		local tween3 = TweenInfo.new(
+			1,
+			Enum.EasingStyle.Quint,
+			Enum.EasingDirection.Out
+		)
+	
+		local tween4 = TweenInfo.new(
+			2,
+			Enum.EasingStyle.Quint,
+			Enum.EasingDirection.Out
+		)
+		local stuff3 = {
+			ImageTransparency = 0
+		}
+	
+		local poof = tweenService:Create(blnhx,tween3,stuff3)
+	
+		local fadein = tweenService:Create(blur,tween1,stuff6)
+		local fadeout = tweenService:Create(blur,tween1,stuff7)
+	
+		local textappere = tweenService:Create(text,tween4,stuff3)
+		-- Playing animations/sounds
+		imagetween:Play()
+		large:Play()
+		fadein:Play()
+		wait(2)
+		pooftemp.ImageTransparency = 0
+		bloop:play()
+		tomatosauce:Play()
+		wait(2)
+		poof:Play()
+		wait(1)
+		imhx.ImageTransparency = 1
+		blnhx2.ImageTransparency = 0
+		bar:TweenSizeAndPosition(UDim2.new(0,500,0,100),UDim2.new(0.5,-250,0.5,-50),"Out","Quint",2)
+		blnhx2:TweenPosition(UDim2.new(0,250,0,0),"Out","Quint",2)
+		blnhx:TweenPosition(UDim2.new(0,-250,0,0),"Out","Quint",2)
+		smol:Play()
+		wait(1.3)
+		textappere:Play()
+		wait(2)
+		holder:TweenPosition(UDim2.new(0,5000,0.5,-50),"In","Quint",2)
+		wosh:Play()
+		wait(1.4)
+		fadeout:Play()
+		wait(2)
+		introgui:Destroy()
+		blur:Destroy()
+	
+		wait()
+	
+		tweening = true
+		screenGui.open:TweenPosition(UDim2.new(0, 0, 0.5, 0),'Out','Quad',0.6)
+		wait(0.6)
+		tweening = false
+	end)
+end
+coroutine.wrap(PJBXUC_fake_script)()
+function DEMFEBI_fake_script() -- Button_22.LocalScript 
+	local script = Instance.new('LocalScript', Button_22)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://pastebin.com/raw/LiT0AivK",true))()
+	end)
+end
+coroutine.wrap(DEMFEBI_fake_script)()
+function ZVVX_fake_script() -- Button_23.LocalScript 
+	local script = Instance.new('LocalScript', Button_23)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/IlikeyocutgHAH12/GEGEGG/main/FE_xester%5B1%5D.txt"))()
+	end)
+end
+coroutine.wrap(ZVVX_fake_script)()
+function IJYDTKE_fake_script() -- Button_24.LocalScript 
+	local script = Instance.new('LocalScript', Button_24)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/IlikeyocutgHAH12/GEGEGG/main/FE_sonic%5B1%5D.txt"))()
+	end)
+end
+coroutine.wrap(IJYDTKE_fake_script)()
+function RJGMEAE_fake_script() -- Button_25.LocalScript 
+	local script = Instance.new('LocalScript', Button_25)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/IlikeyocutgHAH12/GEGEGG/main/FE_caducus_or_somen%5B1%5D.txt"))()
+	end)
+end
+coroutine.wrap(RJGMEAE_fake_script)()
+function IESBO_fake_script() -- Button_26.LocalScript 
+	local script = Instance.new('LocalScript', Button_26)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/IlikeyocutgHAH12/FEERGG/main/FE_neko%5B1%5D.txt"))()
+	end)
+end
+coroutine.wrap(IESBO_fake_script)()
+function DSTWFHE_fake_script() -- Button_27.LocalScript 
+	local script = Instance.new('LocalScript', Button_27)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/IlikeyocutgHAH12/GEGEGG/main/FE_distracted%5B1%5D.txt"))()
+	end)
+end
+coroutine.wrap(DSTWFHE_fake_script)()
+function FWENFMY_fake_script() -- Button_28.LocalScript 
+	local script = Instance.new('LocalScript', Button_28)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/IlikeyocutgHAH12/GEGEGG/main/FE_krystal_dance%5B1%5D.txt"))()
+	end)
+end
+coroutine.wrap(FWENFMY_fake_script)()
+function RCSS_fake_script() -- Button_29.LocalScript 
+	local script = Instance.new('LocalScript', Button_29)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/IlikeyocutgHAH12/GEGEGG/main/FE_vr_headset%5B1%5D.lua"))()
+	end)
+end
+coroutine.wrap(RCSS_fake_script)()
+function VAWIIBZ_fake_script() -- Button_30.LocalScript 
+	local script = Instance.new('LocalScript', Button_30)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/ZinityDrops/OwlHubLink/master/OwlHubBack.lua"))();
+	end)
+end
+coroutine.wrap(VAWIIBZ_fake_script)()
+function WWSAR_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	script.Parent.MouseButton1Click:Connect(function()
+		for _, plr in pairs(game.Players:GetPlayers()) do
+			plr.Character.Humanoid.Health = 0
+		end
+	end)
+end
+coroutine.wrap(WWSAR_fake_script)()
+function NNEM_fake_script() -- TextButton_2.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_2)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	script.Parent.MouseButton1Click:Connect(function()
+		for _, plr in pairs(game.Players:GetPlayers()) do
+			plr.Character.HumanoidRootPart.CFrame = CFrame.new(game.Players.LocalPlayer.Character.HumanoidRootPart.Position)
+		end
+	end)
+end
+coroutine.wrap(NNEM_fake_script)()
+function YSCWWE_fake_script() -- TextButton_3.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_3)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	script.Parent.MouseButton1Click:Connect(function()
+		for _, plr in pairs(game.Players:GetPlayers()) do
+			plr:Kick()
+		end
+	end)
+end
+coroutine.wrap(YSCWWE_fake_script)()
+function MBXCD_fake_script() -- TextButton_4.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_4)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	script.Parent.MouseButton1Click:Connect(function()
+			game.Workspace.Baseplate:Destroy()
+	end)
+end
+coroutine.wrap(MBXCD_fake_script)()
+function IZLO_fake_script() -- TextButton_5.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_5)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	script.Parent.MouseButton1Click:Connect(function()
+		for _, plr in pairs(game.Players:GetPlayers()) do
+			plr.Character.LeftLeg:Destroy()
+			plr.Character.RightLeg:Destroy()
+		end
+	end)
+end
+coroutine.wrap(IZLO_fake_script)()
+function DJPYBO_fake_script() -- MoonFrame.Dragify 
+	local script = Instance.new('LocalScript', MoonFrame)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	local UIS = game:GetService("UserInputService")
+	function dragify(Frame)
+		dragToggle = nil
+		dragSpeed = 0.15
+		dragInput = nil
+		dragStart = nil
+		dragPos = nil
+		function updateInput(input)
+			Delta = input.Position - dragStart
+			Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+			game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.15), {Position = Position}):Play()
+		end
+		Frame.InputBegan:Connect(function(input)
+			if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+				dragToggle = true
+				dragStart = input.Position
+				startPos = Frame.Position
+				input.Changed:Connect(function()
+					if input.UserInputState == Enum.UserInputState.End then
+						dragToggle = false
+					end
+				end)
+			end
+		end)
+		Frame.InputChanged:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+				dragInput = input
+			end
+		end)
+		game:GetService("UserInputService").InputChanged:Connect(function(input)
+			if input == dragInput and dragToggle then
+				updateInput(input)
+			end
+		end)
+	end
+	dragify(script.Parent)
+	
+end
+coroutine.wrap(DJPYBO_fake_script)()
+function LRCAOP_fake_script() -- Button1.LocalScript 
+	local script = Instance.new('LocalScript', Button1)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	Source = script.Parent.Parent.ExecuteBox
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(Source.Text)()
+	end)
+end
+coroutine.wrap(LRCAOP_fake_script)()
+function FOCS_fake_script() -- Button1_2.LocalScript 
+	local script = Instance.new('LocalScript', Button1_2)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.ExecuteBox.Text = ""
+	end)
+end
+coroutine.wrap(FOCS_fake_script)()
+function VLNCKH_fake_script() -- DescriptionPlayerText.LocalScript 
+	local script = Instance.new('LocalScript', DescriptionPlayerText)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	script.Parent.Text = "Welcome".." "..game.Players.LocalPlayer.Name.."!!".." ".."Thank You For Using MoonUI!! :D"
+end
+coroutine.wrap(VLNCKH_fake_script)()
+function NCICP_fake_script() -- PlayerImage.Script 
+	local script = Instance.new('Script', PlayerImage)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	char = {"a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"}
+	
+	function player()
+		plyr = script.Parent; repeat plyr=plyr.Parent until plyr:IsA("Player"); return plyr
+	end
+	
+	function onMouseEnter()
+		Leave = false
+	
+		repeat wait()
+			script.Parent.Important.BackgroundTransparency = script.Parent.Important.BackgroundTransparency -0.1
+			if Leave then break end
+		until script.Parent.Important.BackgroundTransparency <= 0.3
+		script.Parent.Important[string.upper(char[20])..char[5]..char[24]..char[20]]=string.upper(char[16])..char[12]..char[1]..char[25]..char[5]..char[18]..string.upper(char[9])..char[13]..char[1]..char[7]..char[5].." "..string.upper(char[2])..char[25].." "..char[1]..char[1]..char[19]..char[5]..string.reverse(tostring(9)..tostring(6))
+	end
+	
+	function onMouseLeave()
+		Leave = true
+	
+		repeat wait()
+			script.Parent.Important.BackgroundTransparency = script.Parent.Important.BackgroundTransparency + 0.1
+			if not Leave then break end
+		until script.Parent.Important.BackgroundTransparency >= 1
+	end
+	
+	script.Parent.MouseEnter:connect(onMouseEnter)
+	script.Parent.MouseLeave:connect(onMouseLeave)
+	
+	script.Parent.Image = "http://www.roblox.com/Thumbs/Avatar.ashx?x=100&y=100&Format=Png&username="..player().Name
+end
+coroutine.wrap(NCICP_fake_script)()
+function TQCAOTA_fake_script() -- Button1Main.LocalScript 
+	local script = Instance.new('LocalScript', Button1Main)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	if script.Parent:FindFirstChild("RemoteEvent") then
+	
+	local RS = script.Parent.RemoteEvent
+	
+	script.Parent.MouseButton1Click:Connect(function()
+	    RS:FireServer(script.Parent.Parent.ExecuteBox.Text) -- Fires the Text in the TextBox
+	    end)
+	end
+end
+coroutine.wrap(TQCAOTA_fake_script)()
+function JSKXPX_fake_script() -- Button1Main.Script 
+	local script = Instance.new('Script', Button1Main)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	if script.Parent:FindFirstChild("RemoteEvent") then
+	
+	local sss = script.Parent.RemoteEvent
+	
+	sss.OnServerEvent:Connect(function(skid, lol)
+	        require(script.Loadstring)(lol)()
+	    end)
+	end
+end
+coroutine.wrap(JSKXPX_fake_script)()
+function KHGYKVG_fake_script() -- Button1_3.LocalScript 
+	local script = Instance.new('LocalScript', Button1_3)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.ExecuteBox.Text = ""
+	end)
+end
+coroutine.wrap(KHGYKVG_fake_script)()
+function BVGZK_fake_script() -- MoonUI.Script 
+	local script = Instance.new('Script', MoonUI)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	local SSEvent = Instance.new("RemoteEvent")
+	SSEvent.Name = "RemoteEvent"
+	SSEvent.Parent = script.Parent.MoonFrame.SSUIFrame.Button1Main
+end
+coroutine.wrap(BVGZK_fake_script)()
